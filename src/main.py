@@ -1,34 +1,38 @@
-# Importa el sistema (sirve para manejar argumentos y cerrar la app correctamente)
 import sys
-
-# Importa las clases necesarias de PyQt5
 from PyQt5.QtWidgets import QApplication, QWidget
 
-# Importa tu interfaz creada en Qt Designer (convertida a .py)
+# Importar interfaces
 from login_ui import Ui_Form
+from interfaz_registro_ui import Ui_Form as Ui_Registro
 
 
-# Creamos una clase para la ventana
+# 🟢 Ventana LOGIN
 class Login(QWidget, Ui_Form):
     def __init__(self):
-        # Inicializa la ventana base (QWidget)
         super().__init__()
+        self.setupUi(self)
 
-        # Carga todos los elementos de la interfaz (botones, inputs, etc.)
+        # ejemplo: conectar botón
+        self.boton_ingresar.clicked.connect(self.abrir_registro)
+
+    def abrir_registro(self):
+        self.registro = Registro()
+        self.registro.show()
+        self.close()
+
+
+# 🟣 Ventana REGISTRO
+class Registro(QWidget, Ui_Registro):
+    def __init__(self):
+        super().__init__()
         self.setupUi(self)
 
 
-# Punto de inicio del programa
+# 🚀 INICIO DEL PROGRAMA
 if __name__ == "__main__":
-    
-    # Crea la aplicación (obligatorio en PyQt)
     app = QApplication(sys.argv)
 
-    # Crea la ventana
-    ventana = Login()
-
-    # Muestra la ventana en pantalla
+    ventana = Registro()   # 👉 ventana inicial
     ventana.show()
 
-    # Mantiene la app corriendo hasta que la cierres
     sys.exit(app.exec_())

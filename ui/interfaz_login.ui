@@ -6,69 +6,181 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>473</height>
+    <width>1347</width>
+    <height>656</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="boton_ingresar">
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>240</y>
-     <width>75</width>
-     <height>23</height>
+     <x>10</x>
+     <y>0</y>
+     <width>541</width>
+     <height>661</height>
     </rect>
    </property>
    <property name="text">
-    <string>Ingresar</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../Desktop/Diseño sin título.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLineEdit" name="input_dni">
+  <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>180</y>
-     <width>113</width>
-     <height>20</height>
+     <x>700</x>
+     <y>190</y>
+     <width>411</width>
+     <height>361</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(0, 85, 255);
+border-left-color: rgb(0, 85, 255);
+border-right-color: rgb(0, 85, 255);
+border-top-color: rgb(0, 85, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="BOTONINGRESAR">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>280</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>INGRESAR</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="IngresoDNI">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>180</y>
+      <width>321</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;D.N.I:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TextoLogin">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bahnschrift SemiCondensed</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#00007f;&quot;&gt;INGRESÁ A TU CUENTA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; color:#00007f;&quot;&gt;INGRESÁ A TU CUENTA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="crear_cuentabt">
+  <widget class="QPushButton" name="BotonCrearCuenta">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>240</y>
-     <width>75</width>
-     <height>23</height>
+     <x>860</x>
+     <y>560</y>
+     <width>91</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Crear cuenta</string>
+    <string>CREAR CUENTA</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser">
+  <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>280</y>
-     <width>256</width>
-     <height>192</height>
+     <x>800</x>
+     <y>0</y>
+     <width>161</width>
+     <height>181</height>
     </rect>
    </property>
-   <property name="html">
-    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;guardar en qtdesigner: control + s&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;guardar en vs studioo terminal: pyuic5 ui/interfaz_login.ui -o src/login_ui.py&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ejecutar en vs studio o terminal cmd: python src/main.py&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ejecutar para probar: control + r&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../../../Desktop/logo.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="TextoIES">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>361</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Bahnschrift SemiCondensed</family>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;INGRESÁ A TU CUENTA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; color:#000000;&quot;&gt;I.E.S 'Intendente Hugo Herrera&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
+  <zorder>BotonCrearCuenta</zorder>
+  <zorder>label_4</zorder>
+  <zorder>TextoIES</zorder>
  </widget>
  <resources/>
  <connections/>
