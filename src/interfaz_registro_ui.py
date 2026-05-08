@@ -15,6 +15,44 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1130, 667)
+        Form.setStyleSheet("QWidget {\n"
+"    background-color: #2b2b2b;\n"
+"    color: white;\n"
+"    font-size: 14px;\n"
+"}\n"
+"\n"
+"/* INPUTS */\n"
+"QLineEdit {\n"
+"    background-color: #3c3f41;\n"
+"    border: 2px solid #555;\n"
+"    border-radius: 10px;\n"
+"    padding: 5px;\n"
+"    color: white;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #4da6ff;\n"
+"}\n"
+"\n"
+"/* BOTONES */\n"
+"QPushButton {\n"
+"    background-color: #4a4a4a;\n"
+"    border: none;\n"
+"    border-radius: 10px;\n"
+"    padding: 8px;\n"
+"    color: white;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"/* EFECTO HOVER */\n"
+"QPushButton:hover {\n"
+"    background-color: #5c5c5c;\n"
+"}\n"
+"\n"
+"/* CUANDO SE APRIETA */\n"
+"QPushButton:pressed {\n"
+"    background-color: #2f2f2f;\n"
+"}")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(0, 0, 541, 661))
         self.label.setText("")
@@ -25,7 +63,7 @@ class Ui_Form(object):
         self.TextoIES.setGeometry(QtCore.QRect(140, 110, 361, 111))
         font = QtGui.QFont()
         font.setFamily("Bahnschrift SemiCondensed")
-        font.setPointSize(16)
+        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
         self.TextoIES.setFont(font)
@@ -59,7 +97,7 @@ class Ui_Form(object):
         self.TextoLogin.setGeometry(QtCore.QRect(160, 20, 101, 41))
         font = QtGui.QFont()
         font.setFamily("Bahnschrift SemiCondensed")
-        font.setPointSize(16)
+        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
         self.TextoLogin.setFont(font)
