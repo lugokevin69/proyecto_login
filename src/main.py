@@ -12,8 +12,8 @@ class Login(QWidget, Ui_Form):
         super().__init__()
         self.setupUi(self)
 
-        # ejemplo: conectar botón
-        self.boton_ingresar.clicked.connect(self.abrir_registro)
+        #este codigo conecta el boton botonCrearCuenta y inicia la ventana interfaz_registrar
+        self.BotonCrearCuenta.clicked.connect(self.abrir_registro)
 
     def abrir_registro(self):
         self.registro = Registro()
@@ -32,7 +32,7 @@ class Registro(QWidget, Ui_Registro):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
 
-    ventana = Registro()   # 👉 ventana inicial
+    ventana = Login()   # 👉 ventana inicial
     ventana.show()
 
     sys.exit(app.exec_())

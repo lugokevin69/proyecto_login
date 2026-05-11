@@ -68,9 +68,9 @@ class Ui_Form(object):
         self.frame.setFrameShape(QtWidgets.QFrame.Box)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.QPttoushBun = QtWidgets.QPushButton(self.frame)
-        self.QPttoushBun.setGeometry(QtCore.QRect(150, 280, 121, 41))
-        self.QPttoushBun.setObjectName("QPttoushBun")
+        self.boton_ingresar = QtWidgets.QPushButton(self.frame)
+        self.boton_ingresar.setGeometry(QtCore.QRect(150, 280, 121, 41))
+        self.boton_ingresar.setObjectName("boton_ingresar")
         self.IngresoDNI = QtWidgets.QLineEdit(self.frame)
         self.IngresoDNI.setGeometry(QtCore.QRect(50, 180, 321, 51))
         self.IngresoDNI.setObjectName("IngresoDNI")
@@ -117,7 +117,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.QPttoushBun.setText(_translate("Form", "INGRESAR"))
+        self.boton_ingresar.setText(_translate("Form", "INGRESAR"))
         self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:14pt;\">D.N.I:</span></p></body></html>"))
         self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
         self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:26pt; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
