@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/interfaz_login.ui'
+# Form implementation generated from reading ui file 'c:\Users\User\OneDrive\Documentos\proyecto git hub\proyecto_login\ui\interfaz_login.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -99,7 +99,7 @@ class Ui_Form(object):
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(0, 0, 521, 741))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui\\../../../../Desktop/kkk.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("c:\\Users\\User\\OneDrive\\Documentos\\proyecto git hub\\proyecto_login\\ui\\../../../../Desktop/kkk.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
 

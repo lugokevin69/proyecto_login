@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1130</width>
-    <height>667</height>
+    <height>715</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -53,78 +53,13 @@ QPushButton:pressed {
     background-color: #2f2f2f;
 }</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>541</width>
-     <height>661</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../../Desktop/Diseño sin título.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="TextoIES">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>110</y>
-     <width>361</width>
-     <height>111</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Bahnschrift SemiCondensed</family>
-     <pointsize>-1</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="whatsThis">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; color:#000000;&quot;&gt;INGRESÁ A TU CUENTA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: transparent;</string>
-   </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; color:#000000;&quot;&gt;I.E.S 'Intendente Hugo Herrera&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>790</x>
-     <y>0</y>
-     <width>161</width>
-     <height>181</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../../../Desktop/logo.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>180</y>
+     <x>740</x>
+     <y>80</y>
      <width>411</width>
-     <height>361</height>
+     <height>571</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -139,24 +74,52 @@ border-top-color: rgb(0, 85, 255);</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
-   <widget class="QPushButton" name="BotonRegistrarse">
+   <widget class="QPushButton" name="BotonGuardar">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>310</y>
+      <x>150</x>
+      <y>470</y>
       <width>121</width>
       <height>41</height>
      </rect>
     </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#55ff00;&quot;&gt;Guardar&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #1B5E20;   /* Verde oscuro */
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #4CAF50;   /* Verde claro al pasar el mouse */
+}
+QPushButton {
+    background-color: #1B5E20;
+    color: white;
+    border: 2px solid #2E7D32;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+QPushButton:hover {
+    background-color: #66BB6A;
+    border: 2px solid #A5D6A7;
+}</string>
+    </property>
     <property name="text">
-     <string>REGISTRARSE</string>
+     <string>Guardar</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="IngresoNombre">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>90</y>
+      <y>140</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -165,22 +128,27 @@ border-top-color: rgb(0, 85, 255);</string>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>60</y>
+      <x>60</x>
+      <y>110</y>
       <width>61</width>
-      <height>31</height>
+      <height>20</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Nombre:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Nombre:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="TextoLogin">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>140</x>
       <y>20</y>
-      <width>101</width>
+      <width>141</width>
       <height>41</height>
      </rect>
     </property>
@@ -188,35 +156,41 @@ border-top-color: rgb(0, 85, 255);</string>
      <font>
       <family>Bahnschrift SemiCondensed</family>
       <pointsize>-1</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <weight>50</weight>
+      <bold>false</bold>
      </font>
     </property>
     <property name="whatsThis">
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#00007f;&quot;&gt;INGRESÁ A TU CUENTA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; color:#00007f;&quot;&gt;REGISTRO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ffffff;&quot;&gt;REGISTRO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>120</y>
-      <width>61</width>
+      <x>60</x>
+      <y>200</y>
+      <width>71</width>
       <height>31</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Apellido:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;Apellido:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="IngresoApellido">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>150</y>
+      <y>230</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -225,8 +199,8 @@ border-top-color: rgb(0, 85, 255);</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>180</y>
+      <x>60</x>
+      <y>280</y>
       <width>61</width>
       <height>31</height>
      </rect>
@@ -239,7 +213,7 @@ border-top-color: rgb(0, 85, 255);</string>
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>210</y>
+      <y>310</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -248,26 +222,45 @@ border-top-color: rgb(0, 85, 255);</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>240</y>
-      <width>71</width>
+      <x>60</x>
+      <y>360</y>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;CONTRASEÑA:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Contraseña:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="RegistroContrasena">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>270</y>
+      <y>390</y>
       <width>321</width>
       <height>31</height>
      </rect>
     </property>
    </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>531</width>
+     <height>721</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../kkk.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
   </widget>
  </widget>
  <resources/>
