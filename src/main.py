@@ -12,7 +12,7 @@ class Login(QWidget, Ui_Form):
         super().__init__()
         self.setupUi(self)
 
-        #este codigo conecta el boton botonCrearCuenta y inicia la ventana interfaz_registrar
+        #este codigo conecta el boton botonCrearCuenta y inicia la ventana interfaz_registro
         self.BotonCrearCuenta.clicked.connect(self.abrir_registro)
 
     def abrir_registro(self):
@@ -26,6 +26,14 @@ class Registro(QWidget, Ui_Registro):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        #esto define la funcion al boton de volver
+        self.BOTONVOLVERREGISTRO.clicked.connect(self.volver_login)
+
+    def volver_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
+        #viste que era una pavada milencoi
 
 
 # 🚀 INICIO DEL PROGRAMA
