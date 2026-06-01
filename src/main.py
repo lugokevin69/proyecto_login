@@ -35,6 +35,15 @@ class Registro(QWidget, Ui_Registro):
         self.close()
         #viste que era una pavada milencoi
 
+        self.BOTONVOLVERREGISTRO.clicked.connect(self.volver_login)
+
+    def volver_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
+        #viste que era una pavada milencoi
+        
+
 
 # 🚀 INICIO DEL PROGRAMA
 if __name__ == "__main__":
