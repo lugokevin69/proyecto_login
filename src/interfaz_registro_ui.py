@@ -15,10 +15,10 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1130, 715)
-        Form.setStyleSheet("QWidget {\n"
-"    background-color: #2b2b2b;\n"
-"    color: white;\n"
-"    font-size: 14px;\n"
+        Form.setStyleSheet("\n"
+"QWidget{\n"
+"    background-color: #111720\n"
+"\n"
 "}\n"
 "\n"
 "/* INPUTS */\n"
@@ -55,79 +55,98 @@ class Ui_Form(object):
 "}")
         self.frame = QtWidgets.QFrame(Form)
         self.frame.setGeometry(QtCore.QRect(730, 70, 431, 571))
-        self.frame.setStyleSheet("border-color: rgb(0, 85, 255);\n"
-"border-left-color: rgb(0, 85, 255);\n"
-"border-right-color: rgb(0, 85, 255);\n"
-"border-top-color: rgb(0, 85, 255);")
+        self.frame.setStyleSheet("QFrame{\n"
+"    background-color: qlineargradient(\n"
+"        x1:0, y1:0,\n"
+"        x2:1, y2:1,\n"
+"        stop:0 #141B25,\n"
+"        stop:0.4 #1A212C,\n"
+"        stop:1 #10161F\n"
+"    );\n"
+"\n"
+"    border: 1px solid #273140;\n"
+"    border-radius: 25px;\n"
+"}\n"
+"\n"
+"QFrame:hover{\n"
+"    border: 1px solid #2F3B4D;\n"
+"}\n"
+"\n"
+"QFrame{\n"
+"    background-color: #161D28;\n"
+"    border-radius: 25px;\n"
+"    border: 1px solid #273140;\n"
+"}\n"
+"\n"
+"QMainWindow{\n"
+"    background-color: #081A36;\n"
+"}")
         self.frame.setFrameShape(QtWidgets.QFrame.Box)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.BotonGuardar = QtWidgets.QPushButton(self.frame)
-        self.BotonGuardar.setGeometry(QtCore.QRect(150, 470, 121, 41))
-        self.BotonGuardar.setStyleSheet("QPushButton {\n"
-"    background-color: #1B5E20;   /* Verde oscuro */\n"
+        self.bt_guardar = QtWidgets.QPushButton(self.frame)
+        self.bt_guardar.setGeometry(QtCore.QRect(150, 490, 151, 51))
+        self.bt_guardar.setMinimumSize(QtCore.QSize(0, 5))
+        self.bt_guardar.setStyleSheet("QPushButton{\n"
+"    background-color: #16A34A;\n"
 "    color: white;\n"
-"    border-radius: 10px;\n"
-"    padding: 8px;\n"
-"    font-size: 14px;\n"
+"\n"
+"    border: none;\n"
+"    border-radius: 12px;\n"
+"\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 11pt;\n"
+"    font-weight: 600;\n"
+"\n"
+"    min-height: 48px;\n"
+"\n"
+"    padding-left: 15px;\n"
+"    padding-right: 15px;\n"
 "}\n"
 "\n"
-"QPushButton:hover {\n"
-"    background-color: #4CAF50;   /* Verde claro al pasar el mouse */\n"
-"}\n"
-"QPushButton {\n"
-"    background-color: #1B5E20;\n"
-"    color: white;\n"
-"    border: 2px solid #2E7D32;\n"
-"    border-radius: 10px;\n"
-"    padding: 8px;\n"
+"QPushButton:hover{\n"
+"    background-color: #22C55E;\n"
 "}\n"
 "\n"
-"QPushButton:hover {\n"
-"    background-color: #66BB6A;\n"
-"    border: 2px solid #A5D6A7;\n"
+"QPushButton:pressed{\n"
+"    background-color: #15803D;\n"
 "}")
-        self.BotonGuardar.setObjectName("BotonGuardar")
-        self.label_3 = QtWidgets.QLabel(self.frame)
-        self.label_3.setGeometry(QtCore.QRect(50, 210, 61, 20))
-        font = QtGui.QFont()
-        font.setPointSize(-1)
-        self.label_3.setFont(font)
-        self.label_3.setObjectName("label_3")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui\\../iconos/disquete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.bt_guardar.setIcon(icon)
+        self.bt_guardar.setObjectName("bt_guardar")
         self.TextoLogin = QtWidgets.QLabel(self.frame)
-        self.TextoLogin.setGeometry(QtCore.QRect(140, 20, 141, 41))
+        self.TextoLogin.setGeometry(QtCore.QRect(80, 10, 301, 61))
         font = QtGui.QFont()
         font.setFamily("Bahnschrift SemiCondensed")
-        font.setPointSize(-1)
         font.setBold(False)
         font.setWeight(50)
         self.TextoLogin.setFont(font)
+        self.TextoLogin.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
         self.TextoLogin.setObjectName("TextoLogin")
-        self.label_5 = QtWidgets.QLabel(self.frame)
-        self.label_5.setGeometry(QtCore.QRect(50, 280, 71, 31))
-        font = QtGui.QFont()
-        font.setFamily("Consolas")
-        font.setPointSize(-1)
-        self.label_5.setFont(font)
-        self.label_5.setObjectName("label_5")
-        self.IngresoApellido = QtWidgets.QLineEdit(self.frame)
-        self.IngresoApellido.setGeometry(QtCore.QRect(50, 230, 321, 31))
-        self.IngresoApellido.setObjectName("IngresoApellido")
-        self.label_6 = QtWidgets.QLabel(self.frame)
-        self.label_6.setGeometry(QtCore.QRect(50, 360, 61, 31))
-        self.label_6.setObjectName("label_6")
-        self.RegistroDNI = QtWidgets.QLineEdit(self.frame)
-        self.RegistroDNI.setGeometry(QtCore.QRect(50, 310, 321, 31))
-        self.RegistroDNI.setObjectName("RegistroDNI")
+        self.input_nombre = QtWidgets.QLineEdit(self.frame)
+        self.input_nombre.setGeometry(QtCore.QRect(50, 290, 321, 31))
+        self.input_nombre.setObjectName("input_nombre")
         self.label_7 = QtWidgets.QLabel(self.frame)
-        self.label_7.setGeometry(QtCore.QRect(50, 120, 151, 31))
+        self.label_7.setGeometry(QtCore.QRect(70, 120, 171, 21))
+        self.label_7.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
         self.label_7.setObjectName("label_7")
-        self.RegistroContrasena = QtWidgets.QLineEdit(self.frame)
-        self.RegistroContrasena.setGeometry(QtCore.QRect(50, 390, 321, 31))
-        self.RegistroContrasena.setObjectName("RegistroContrasena")
-        self.OPCIONESCARRERAS = QtWidgets.QComboBox(self.frame)
-        self.OPCIONESCARRERAS.setGeometry(QtCore.QRect(50, 150, 321, 31))
-        self.OPCIONESCARRERAS.setStyleSheet("QComboBox {\n"
+        self.input_apellido = QtWidgets.QLineEdit(self.frame)
+        self.input_apellido.setGeometry(QtCore.QRect(50, 360, 321, 31))
+        self.input_apellido.setObjectName("input_apellido")
+        self.combo_carrera = QtWidgets.QComboBox(self.frame)
+        self.combo_carrera.setGeometry(QtCore.QRect(50, 150, 321, 31))
+        self.combo_carrera.setStyleSheet("QComboBox {\n"
 "    background-color: #1E1E1E;\n"
 "    color: white;\n"
 "    border: 2px solid #42A5F5;\n"
@@ -163,37 +182,228 @@ class Ui_Form(object):
 "    selection-background-color: #42A5F5;\n"
 "    selection-color: white;\n"
 "}")
-        self.OPCIONESCARRERAS.setObjectName("OPCIONESCARRERAS")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
+        self.combo_carrera.setObjectName("combo_carrera")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(30, 30, 47, 51))
+        self.label_2.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("ui\\../iconos/defi+.png"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
+        self.label_8 = QtWidgets.QLabel(self.frame)
+        self.label_8.setGeometry(QtCore.QRect(80, 61, 221, 20))
+        self.label_8.setStyleSheet("QLabel{\n"
+"    color: #AEB8C7;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 11pt;\n"
+"    font-weight: 400;\n"
+"}\n"
+"QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_8.setObjectName("label_8")
+        self.label_9 = QtWidgets.QLabel(self.frame)
+        self.label_9.setGeometry(QtCore.QRect(70, 190, 181, 21))
+        self.label_9.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_9.setObjectName("label_9")
+        self.label_10 = QtWidgets.QLabel(self.frame)
+        self.label_10.setGeometry(QtCore.QRect(70, 260, 181, 21))
+        self.label_10.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_10.setObjectName("label_10")
+        self.label_11 = QtWidgets.QLabel(self.frame)
+        self.label_11.setGeometry(QtCore.QRect(70, 330, 181, 21))
+        self.label_11.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_11.setObjectName("label_11")
+        self.label_12 = QtWidgets.QLabel(self.frame)
+        self.label_12.setGeometry(QtCore.QRect(70, 400, 181, 21))
+        self.label_12.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_12.setObjectName("label_12")
+        self.input_dni = QtWidgets.QLineEdit(self.frame)
+        self.input_dni.setGeometry(QtCore.QRect(50, 430, 321, 31))
+        self.input_dni.setObjectName("input_dni")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(40, 120, 21, 21))
+        self.label_3.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_3.setText("")
+        self.label_3.setPixmap(QtGui.QPixmap("ui\\../iconos/sombrero-de-graduacion22.png"))
+        self.label_3.setScaledContents(True)
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(40, 190, 21, 21))
+        self.label_4.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_4.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_4.setText("")
+        self.label_4.setPixmap(QtGui.QPixmap("ui\\../iconos/calendario (1).png"))
+        self.label_4.setScaledContents(True)
+        self.label_4.setObjectName("label_4")
+        self.combo_anio = QtWidgets.QComboBox(self.frame)
+        self.combo_anio.setGeometry(QtCore.QRect(50, 220, 321, 31))
+        self.combo_anio.setStyleSheet("QComboBox {\n"
+"    background-color: #1E1E1E;\n"
+"    color: white;\n"
+"    border: 2px solid #42A5F5;\n"
+"    border-radius: 12px;\n"
+"    padding: 6px 12px;\n"
+"    font-size: 14px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QComboBox:hover {\n"
+"    border: 2px solid #64B5F6;\n"
+"    background-color: #252525;\n"
+"}\n"
+"\n"
+"QComboBox:focus {\n"
+"    border: 2px solid #90CAF9;\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    border: none;\n"
+"    width: 30px;\n"
+"}\n"
+"\n"
+"QComboBox::down-arrow {\n"
+"    image: none;\n"
+"}\n"
+"\n"
+"QComboBox QAbstractItemView {\n"
+"    background-color: #2A2A2A;\n"
+"    color: white;\n"
+"    border: 2px solid #42A5F5;\n"
+"    border-radius: 8px;\n"
+"    selection-background-color: #42A5F5;\n"
+"    selection-color: white;\n"
+"}")
+        self.combo_anio.setObjectName("combo_anio")
+        self.combo_anio.addItem("")
+        self.combo_anio.addItem("")
+        self.combo_anio.addItem("")
+        self.combo_anio.addItem("")
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(40, 260, 20, 20))
+        self.label_5.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_5.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_5.setText("")
+        self.label_5.setPixmap(QtGui.QPixmap("ui\\../iconos/usuario.png"))
+        self.label_5.setScaledContents(True)
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.frame)
+        self.label_6.setGeometry(QtCore.QRect(40, 330, 21, 21))
+        self.label_6.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_6.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_6.setText("")
+        self.label_6.setPixmap(QtGui.QPixmap("ui\\../iconos/usuario.png"))
+        self.label_6.setScaledContents(True)
+        self.label_6.setObjectName("label_6")
+        self.label_13 = QtWidgets.QLabel(self.frame)
+        self.label_13.setGeometry(QtCore.QRect(40, 400, 21, 21))
+        self.label_13.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_13.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_13.setText("")
+        self.label_13.setPixmap(QtGui.QPixmap("ui\\../iconos/licencia-de-conducir.png"))
+        self.label_13.setScaledContents(True)
+        self.label_13.setObjectName("label_13")
+        self.bt_guardar.raise_()
+        self.label_7.raise_()
+        self.input_apellido.raise_()
+        self.combo_carrera.raise_()
+        self.label_2.raise_()
+        self.TextoLogin.raise_()
+        self.label_8.raise_()
+        self.label_9.raise_()
+        self.label_10.raise_()
+        self.label_11.raise_()
+        self.label_12.raise_()
+        self.input_dni.raise_()
+        self.label_3.raise_()
+        self.label_4.raise_()
+        self.label_5.raise_()
+        self.label_6.raise_()
+        self.label_13.raise_()
+        self.combo_anio.raise_()
+        self.input_nombre.raise_()
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(0, 0, 531, 721))
+        self.label.setGeometry(QtCore.QRect(0, 0, 501, 721))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui\\../kkk.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("ui\\../foto1 - copia.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
-        self.BOTONVOLVERREGISTRO = QtWidgets.QPushButton(Form)
-        self.BOTONVOLVERREGISTRO.setGeometry(QtCore.QRect(560, 20, 91, 72))
-        self.BOTONVOLVERREGISTRO.setStyleSheet("QPushButton {\n"
-"    background-color: #6EC6FF;\n"
-"    border: none;\n"
-"    border-radius: 28px;\n"
-"    min-width: 56px;\n"
-"    min-height: 56px;\n"
+        self.bt_volver = QtWidgets.QPushButton(Form)
+        self.bt_volver.setGeometry(QtCore.QRect(560, 20, 91, 51))
+        self.bt_volver.setMinimumSize(QtCore.QSize(0, 0))
+        self.bt_volver.setStyleSheet("QPushButton{\n"
+"    background-color: #1B2330;\n"
+"    color: #FFFFFF;\n"
+"\n"
+"    border: 1px solid #2F3A4F;\n"
+"    border-radius: 12px;\n"
+"\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 10pt;\n"
+"    font-weight: 600;\n"
+"\n"
+"    padding: 8px 15px;\n"
 "}\n"
 "\n"
-"QPushButton:hover {\n"
-"    background-color: #42A5F5;\n"
+"QPushButton:hover{\n"
+"    background-color: #242E3D;\n"
+"    border: 1px solid #3B82F6;\n"
 "}\n"
 "\n"
-"QPushButton:pressed {\n"
-"    background-color: #1E88E5;\n"
+"QPushButton:pressed{\n"
+"    background-color: #18202C;\n"
 "}")
-        self.BOTONVOLVERREGISTRO.setObjectName("BOTONVOLVERREGISTRO")
+        self.bt_volver.setObjectName("bt_volver")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -201,18 +411,24 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.BotonGuardar.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" color:#55ff00;\">Guardar</span></p></body></html>"))
-        self.BotonGuardar.setText(_translate("Form", "Guardar"))
-        self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#ffffff;\">Nombre:</span></p></body></html>"))
+        self.bt_guardar.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" color:#55ff00;\">Guardar</span></p></body></html>"))
+        self.bt_guardar.setText(_translate("Form", "Guardar"))
         self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
-        self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">REGISTRO</span></p></body></html>"))
-        self.label_5.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#ffffff;\">Apellido:</span></p></body></html>"))
-        self.label_6.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">D.N.I:</span></p></body></html>"))
-        self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Carrera / Tecnicatura:</span></p></body></html>"))
-        self.OPCIONESCARRERAS.setItemText(0, _translate("Form", "TEC. SUP. EN DESARROLLO DE SOFTWARE."))
-        self.OPCIONESCARRERAS.setItemText(1, _translate("Form", "TEC. EN FRUTIHORTICOLA."))
-        self.OPCIONESCARRERAS.setItemText(2, _translate("Form", "TEC. EN MARKETING Y PUBLICIDAD."))
-        self.OPCIONESCARRERAS.setItemText(3, _translate("Form", "PROFESORADO EN T.I.C."))
-        self.OPCIONESCARRERAS.setItemText(4, _translate("Form", "PROFESORADO EN TECNOLOGÍA."))
-        self.OPCIONESCARRERAS.setItemText(5, _translate("Form", "PROFESORADO EN FISÍCA."))
-        self.BOTONVOLVERREGISTRO.setText(_translate("Form", "⮜ Volver"))
+        self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">Registro de Alumno.</span></p></body></html>"))
+        self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Carrera / Tecnicatura:</span></p></body></html>"))
+        self.combo_carrera.setItemText(0, _translate("Form", "TEC. SUP. EN DESARROLLO DE SOFTWARE."))
+        self.combo_carrera.setItemText(1, _translate("Form", "TEC. EN FRUTIHORTICOLA."))
+        self.combo_carrera.setItemText(2, _translate("Form", "TEC. EN MARKETING Y PUBLICIDAD."))
+        self.combo_carrera.setItemText(3, _translate("Form", "PROFESORADO EN T.I.C."))
+        self.combo_carrera.setItemText(4, _translate("Form", "PROFESORADO EN TECNOLOGÍA."))
+        self.combo_carrera.setItemText(5, _translate("Form", "PROFESORADO EN FISÍCA."))
+        self.label_8.setText(_translate("Form", "Complete los datos."))
+        self.label_9.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Año de Carrera / Tecnicatura:</span></p></body></html>"))
+        self.label_10.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Nombre:</span></p></body></html>"))
+        self.label_11.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Apellido:</span></p></body></html>"))
+        self.label_12.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">D.N.I:</span></p></body></html>"))
+        self.combo_anio.setItemText(0, _translate("Form", "1° Año."))
+        self.combo_anio.setItemText(1, _translate("Form", "2° Año."))
+        self.combo_anio.setItemText(2, _translate("Form", "3° Año."))
+        self.combo_anio.setItemText(3, _translate("Form", "4° Año."))
+        self.bt_volver.setText(_translate("Form", "⮜ Volver"))

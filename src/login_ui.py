@@ -15,11 +15,12 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(1347, 656)
-        Form.setStyleSheet("QWidget {\n"
-"    background-color: #2b2b2b;\n"
-"    color: white;\n"
-"    font-size: 14px;\n"
+        Form.setMinimumSize(QtCore.QSize(0, 2))
+        Form.setStyleSheet("\n"
+"QWidget{\n"
+"    background-color: #111720\n"
 "}\n"
+"\n"
 "\n"
 "/* INPUTS */\n"
 "QLineEdit {\n"
@@ -54,52 +55,216 @@ class Ui_Form(object):
 "    background-color: #2f2f2f;\n"
 "}")
         self.frame = QtWidgets.QFrame(Form)
-        self.frame.setGeometry(QtCore.QRect(740, 50, 421, 571))
-        self.frame.setStyleSheet("border-color: rgb(0, 85, 255);\n"
-"border-left-color: rgb(0, 85, 255);\n"
-"border-right-color: rgb(0, 85, 255);\n"
-"border-top-color: rgb(0, 85, 255);")
-        self.frame.setFrameShape(QtWidgets.QFrame.Box)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setGeometry(QtCore.QRect(710, 60, 500, 591))
+        self.frame.setMinimumSize(QtCore.QSize(500, 400))
+        self.frame.setStyleSheet("QFrame{\n"
+"    background-color: qlineargradient(\n"
+"        x1:0, y1:0,\n"
+"        x2:1, y2:1,\n"
+"        stop:0 #141B25,\n"
+"        stop:0.4 #1A212C,\n"
+"        stop:1 #10161F\n"
+"    );\n"
+"\n"
+"    border: 1px solid #273140;\n"
+"    border-radius: 25px;\n"
+"}\n"
+"\n"
+"QFrame:hover{\n"
+"    border: 1px solid #2F3B4D;\n"
+"}\n"
+"\n"
+"QFrame{\n"
+"    background-color: #161D28;\n"
+"    border-radius: 25px;\n"
+"    border: 1px solid #273140;\n"
+"}\n"
+"\n"
+"QMainWindow{\n"
+"    background-color: #081A36;\n"
+"}")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Plain)
         self.frame.setObjectName("frame")
-        self.boton_ingresar = QtWidgets.QPushButton(self.frame)
-        self.boton_ingresar.setGeometry(QtCore.QRect(150, 270, 121, 41))
-        self.boton_ingresar.setObjectName("boton_ingresar")
+        self.bt_buscar = QtWidgets.QPushButton(self.frame)
+        self.bt_buscar.setGeometry(QtCore.QRect(190, 320, 121, 64))
+        self.bt_buscar.setMinimumSize(QtCore.QSize(0, 64))
+        self.bt_buscar.setMaximumSize(QtCore.QSize(16777214, 15000000))
+        self.bt_buscar.setStyleSheet("QPushButton{\n"
+"    background-color: #2563EB;\n"
+"    color: white;\n"
+"\n"
+"    border: none;\n"
+"    border-radius: 12px;\n"
+"\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 11pt;\n"
+"    font-weight: 600;\n"
+"\n"
+"    min-height: 48px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #3B82F6;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: #1D4ED8;\n"
+"}")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("ui\\../iconos/lupa.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.bt_buscar.setIcon(icon)
+        self.bt_buscar.setObjectName("bt_buscar")
         self.IngresoDNI = QtWidgets.QLineEdit(self.frame)
-        self.IngresoDNI.setGeometry(QtCore.QRect(50, 180, 321, 51))
+        self.IngresoDNI.setGeometry(QtCore.QRect(70, 240, 361, 51))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(11)
+        self.IngresoDNI.setFont(font)
+        self.IngresoDNI.setStyleSheet("QLineEdit{\n"
+"    background-color: #1B2330;\n"
+"    color: white;\n"
+"    border: 2px solid #3B82F6;\n"
+"    border-radius: 12px;\n"
+"    padding-left: 15px;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 11pt;\n"
+"}\n"
+"\n"
+"QLineEdit:focus{\n"
+"    border: 2px solid #60A5FA;\n"
+"}")
+        self.IngresoDNI.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.IngresoDNI.setCursorMoveStyle(QtCore.Qt.LogicalMoveStyle)
         self.IngresoDNI.setObjectName("IngresoDNI")
         self.label_3 = QtWidgets.QLabel(self.frame)
-        self.label_3.setGeometry(QtCore.QRect(50, 140, 61, 31))
+        self.label_3.setGeometry(QtCore.QRect(70, 200, 61, 31))
+        self.label_3.setStyleSheet("QLabel{\n"
+"    color: #AEB8C7;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 11pt;\n"
+"    font-weight: 400;\n"
+"}\n"
+"QLabel{\n"
+"    border: 0px;\n"
+"}")
         self.label_3.setObjectName("label_3")
-        self.TextoLogin = QtWidgets.QLabel(self.frame)
-        self.TextoLogin.setGeometry(QtCore.QRect(60, 50, 311, 41))
-        font = QtGui.QFont()
-        font.setFamily("Bahnschrift SemiCondensed")
-        font.setPointSize(-1)
-        font.setBold(True)
-        font.setWeight(75)
-        self.TextoLogin.setFont(font)
-        self.TextoLogin.setObjectName("TextoLogin")
         self.BotonCrearCuenta = QtWidgets.QPushButton(self.frame)
-        self.BotonCrearCuenta.setGeometry(QtCore.QRect(80, 400, 271, 31))
+        self.BotonCrearCuenta.setGeometry(QtCore.QRect(70, 440, 351, 63))
+        self.BotonCrearCuenta.setMinimumSize(QtCore.QSize(0, 63))
+        self.BotonCrearCuenta.setStyleSheet("QPushButton{\n"
+"    background-color: #1B2330;\n"
+"    color: #FFFFFF;\n"
+"\n"
+"    border: 1px solid #2F3A4F;\n"
+"    border-radius: 12px;\n"
+"\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 10pt;\n"
+"    font-weight: 600;\n"
+"\n"
+"    min-height: 45px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #242E3D;\n"
+"    border: 1px solid #3B82F6;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: #18202C;\n"
+"}")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui\\../iconos/agregar-usuario.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.BotonCrearCuenta.setIcon(icon1)
         self.BotonCrearCuenta.setObjectName("BotonCrearCuenta")
-        self.BotonCrearCuenta_2 = QtWidgets.QPushButton(self.frame)
-        self.BotonCrearCuenta_2.setGeometry(QtCore.QRect(80, 460, 271, 31))
-        self.BotonCrearCuenta_2.setObjectName("BotonCrearCuenta_2")
+        self.bt_admin = QtWidgets.QPushButton(self.frame)
+        self.bt_admin.setGeometry(QtCore.QRect(70, 510, 351, 63))
+        self.bt_admin.setMinimumSize(QtCore.QSize(0, 63))
+        self.bt_admin.setStyleSheet("QPushButton{\n"
+"    background-color: #1B2330;\n"
+"    color: #FFFFFF;\n"
+"\n"
+"    border: 1px solid #2F3A4F;\n"
+"    border-radius: 12px;\n"
+"\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 10pt;\n"
+"    font-weight: 600;\n"
+"\n"
+"    min-height: 45px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #242E3D;\n"
+"    border: 1px solid #3B82F6;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: #18202C;\n"
+"}")
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("ui\\../iconos/proteger.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.bt_admin.setIcon(icon2)
+        self.bt_admin.setObjectName("bt_admin")
+        self.label_2 = QtWidgets.QLabel(self.frame)
+        self.label_2.setGeometry(QtCore.QRect(200, 10, 91, 91))
+        self.label_2.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("ui\\../iconos/gorro-de-graduacion.png"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
+        self.label_4 = QtWidgets.QLabel(self.frame)
+        self.label_4.setGeometry(QtCore.QRect(140, 110, 211, 41))
+        self.label_4.setStyleSheet("QLabel{\n"
+"    color: #FFFFFF;\n"
+"    font-family: \"Montserrat\";\n"
+"    font-size: 30pt;\n"
+"    font-weight: 700;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(140, 150, 221, 21))
+        self.label_5.setStyleSheet("QLabel{\n"
+"    color: #AEB8C7;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 11pt;\n"
+"    font-weight: 400;\n"
+"}\n"
+"QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.frame)
+        self.label_6.setGeometry(QtCore.QRect(90, 400, 321, 16))
+        self.label_6.setStyleSheet("QLabel{\n"
+"    color: #AEB8C7;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 10pt;\n"
+"    font-weight: 600;\n"
+"    background: transparent;\n"
+"}\n"
+"QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_6.setObjectName("label_6")
         self.TextoIES = QtWidgets.QLabel(Form)
         self.TextoIES.setGeometry(QtCore.QRect(110, 50, 361, 111))
         font = QtGui.QFont()
         font.setFamily("Bahnschrift SemiCondensed")
-        font.setPointSize(-1)
         font.setBold(True)
         font.setWeight(75)
         self.TextoIES.setFont(font)
         self.TextoIES.setStyleSheet("background-color: transparent;")
         self.TextoIES.setObjectName("TextoIES")
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(0, 0, 521, 741))
+        self.label.setGeometry(QtCore.QRect(0, 0, 501, 741))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui\\../../../../Desktop/kkk.jpg"))
+        self.label.setPixmap(QtGui.QPixmap("ui\\../foto1.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
 
@@ -109,12 +274,14 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.boton_ingresar.setText(_translate("Form", "INGRESAR"))
-        self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:14pt;\">D.N.I:</span></p></body></html>"))
-        self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
-        self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
+        self.bt_buscar.setText(_translate("Form", "BUSCAR"))
+        self.IngresoDNI.setPlaceholderText(_translate("Form", "👤 Ingresar DNI..."))
+        self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:14pt; font-weight:600;\">D.N.I:</span></p></body></html>"))
         self.BotonCrearCuenta.setWhatsThis(_translate("Form", "<html><head/><body><p align=\"center\"><span style=\" color:#ffffff;\">CREAR CUENTA<br/>COMO PROFESOR</span></p></body></html>"))
-        self.BotonCrearCuenta.setText(_translate("Form", "CREAR CUENTA COMO PROFESOR"))
-        self.BotonCrearCuenta_2.setText(_translate("Form", "CREAR CUENTA COMO ALUMNO"))
+        self.BotonCrearCuenta.setText(_translate("Form", "REGISTRAR ALUMNO"))
+        self.bt_admin.setText(_translate("Form", "INGRESAR COMO ADMINISTRADOR"))
+        self.label_4.setText(_translate("Form", "Bienvenido"))
+        self.label_5.setText(_translate("Form", "Ingresar DNI para la busqueda.."))
+        self.label_6.setText(_translate("Form", "──────────────── O ────────────────"))
         self.TextoIES.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; color:#000000;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
         self.TextoIES.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:20pt; color:#000000;\">I.E.S \'Intendente Hugo Herrera&quot;</span></p></body></html>"))
