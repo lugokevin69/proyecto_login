@@ -84,11 +84,18 @@ class Ui_Form(object):
         self.frame.setFrameShape(QtWidgets.QFrame.Box)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
+<<<<<<< HEAD
         self.bt_guardar = QtWidgets.QPushButton(self.frame)
         self.bt_guardar.setGeometry(QtCore.QRect(150, 490, 151, 51))
         self.bt_guardar.setMinimumSize(QtCore.QSize(0, 5))
         self.bt_guardar.setStyleSheet("QPushButton{\n"
 "    background-color: #16A34A;\n"
+=======
+        self.boton_guardar = QtWidgets.QPushButton(self.frame)
+        self.boton_guardar.setGeometry(QtCore.QRect(150, 470, 121, 41))
+        self.boton_guardar.setStyleSheet("QPushButton {\n"
+"    background-color: #1B5E20;   /* Verde oscuro */\n"
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
 "    color: white;\n"
 "\n"
 "    border: none;\n"
@@ -111,10 +118,20 @@ class Ui_Form(object):
 "QPushButton:pressed{\n"
 "    background-color: #15803D;\n"
 "}")
+<<<<<<< HEAD
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("ui\\../iconos/disquete.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bt_guardar.setIcon(icon)
         self.bt_guardar.setObjectName("bt_guardar")
+=======
+        self.boton_guardar.setObjectName("boton_guardar")
+        self.label_3 = QtWidgets.QLabel(self.frame)
+        self.label_3.setGeometry(QtCore.QRect(50, 210, 61, 20))
+        font = QtGui.QFont()
+        font.setPointSize(-1)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
         self.TextoLogin = QtWidgets.QLabel(self.frame)
         self.TextoLogin.setGeometry(QtCore.QRect(80, 10, 301, 61))
         font = QtGui.QFont()
@@ -126,9 +143,28 @@ class Ui_Form(object):
 "    border: 0px;\n"
 "}")
         self.TextoLogin.setObjectName("TextoLogin")
+<<<<<<< HEAD
         self.input_nombre = QtWidgets.QLineEdit(self.frame)
         self.input_nombre.setGeometry(QtCore.QRect(50, 290, 321, 31))
         self.input_nombre.setObjectName("input_nombre")
+=======
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(50, 280, 71, 31))
+        font = QtGui.QFont()
+        font.setFamily("Consolas")
+        font.setPointSize(-1)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.input_nombre = QtWidgets.QLineEdit(self.frame)
+        self.input_nombre.setGeometry(QtCore.QRect(50, 230, 321, 31))
+        self.input_nombre.setObjectName("input_nombre")
+        self.label_6 = QtWidgets.QLabel(self.frame)
+        self.label_6.setGeometry(QtCore.QRect(50, 360, 61, 31))
+        self.label_6.setObjectName("label_6")
+        self.input_apellido = QtWidgets.QLineEdit(self.frame)
+        self.input_apellido.setGeometry(QtCore.QRect(50, 310, 321, 31))
+        self.input_apellido.setObjectName("input_apellido")
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
         self.label_7 = QtWidgets.QLabel(self.frame)
         self.label_7.setGeometry(QtCore.QRect(70, 120, 171, 21))
         self.label_7.setStyleSheet("QLabel{\n"
@@ -141,9 +177,15 @@ class Ui_Form(object):
 "    border: none;\n"
 "}")
         self.label_7.setObjectName("label_7")
+<<<<<<< HEAD
         self.input_apellido = QtWidgets.QLineEdit(self.frame)
         self.input_apellido.setGeometry(QtCore.QRect(50, 360, 321, 31))
         self.input_apellido.setObjectName("input_apellido")
+=======
+        self.input_dni = QtWidgets.QLineEdit(self.frame)
+        self.input_dni.setGeometry(QtCore.QRect(50, 390, 321, 31))
+        self.input_dni.setObjectName("input_dni")
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
         self.combo_carrera = QtWidgets.QComboBox(self.frame)
         self.combo_carrera.setGeometry(QtCore.QRect(50, 150, 321, 31))
         self.combo_carrera.setStyleSheet("QComboBox {\n"
@@ -189,6 +231,7 @@ class Ui_Form(object):
         self.combo_carrera.addItem("")
         self.combo_carrera.addItem("")
         self.combo_carrera.addItem("")
+<<<<<<< HEAD
         self.label_2 = QtWidgets.QLabel(self.frame)
         self.label_2.setGeometry(QtCore.QRect(30, 30, 47, 51))
         self.label_2.setStyleSheet("QLabel{\n"
@@ -282,6 +325,10 @@ class Ui_Form(object):
         self.label_4.setObjectName("label_4")
         self.combo_anio = QtWidgets.QComboBox(self.frame)
         self.combo_anio.setGeometry(QtCore.QRect(50, 220, 321, 31))
+=======
+        self.combo_anio = QtWidgets.QComboBox(self.frame)
+        self.combo_anio.setGeometry(QtCore.QRect(30, 440, 101, 31))
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
         self.combo_anio.setStyleSheet("QComboBox {\n"
 "    background-color: #1E1E1E;\n"
 "    color: white;\n"
@@ -323,6 +370,7 @@ class Ui_Form(object):
         self.combo_anio.addItem("")
         self.combo_anio.addItem("")
         self.combo_anio.addItem("")
+<<<<<<< HEAD
         self.label_5 = QtWidgets.QLabel(self.frame)
         self.label_5.setGeometry(QtCore.QRect(40, 260, 20, 20))
         self.label_5.setLayoutDirection(QtCore.Qt.LeftToRight)
@@ -372,12 +420,15 @@ class Ui_Form(object):
         self.label_13.raise_()
         self.combo_anio.raise_()
         self.input_nombre.raise_()
+=======
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(0, 0, 501, 721))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("ui\\../foto1 - copia.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+<<<<<<< HEAD
         self.bt_volver = QtWidgets.QPushButton(Form)
         self.bt_volver.setGeometry(QtCore.QRect(560, 20, 91, 51))
         self.bt_volver.setMinimumSize(QtCore.QSize(0, 0))
@@ -393,6 +444,17 @@ class Ui_Form(object):
 "    font-weight: 600;\n"
 "\n"
 "    padding: 8px 15px;\n"
+=======
+        self.BOTONVOLVERREGISTRO = QtWidgets.QPushButton(Form)
+        self.BOTONVOLVERREGISTRO.setGeometry(QtCore.QRect(560, 20, 91, 72))
+        self.BOTONVOLVERREGISTRO.setMinimumSize(QtCore.QSize(72, 72))
+        self.BOTONVOLVERREGISTRO.setStyleSheet("QPushButton {\n"
+"    background-color: #6EC6FF;\n"
+"    border: none;\n"
+"    border-radius: 28px;\n"
+"    min-width: 56px;\n"
+"    min-height: 56px;\n"
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
 "}\n"
 "\n"
 "QPushButton:hover{\n"
@@ -411,17 +473,29 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
+<<<<<<< HEAD
         self.bt_guardar.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" color:#55ff00;\">Guardar</span></p></body></html>"))
         self.bt_guardar.setText(_translate("Form", "Guardar"))
         self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
         self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">Registro de Alumno.</span></p></body></html>"))
         self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Carrera / Tecnicatura:</span></p></body></html>"))
+=======
+        self.boton_guardar.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" color:#55ff00;\">Guardar</span></p></body></html>"))
+        self.boton_guardar.setText(_translate("Form", "Guardar"))
+        self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#ffffff;\">Nombre:</span></p></body></html>"))
+        self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
+        self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">REGISTRO</span></p></body></html>"))
+        self.label_5.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#ffffff;\">Apellido:</span></p></body></html>"))
+        self.label_6.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">D.N.I:</span></p></body></html>"))
+        self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Carrera / Tecnicatura:</span></p></body></html>"))
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
         self.combo_carrera.setItemText(0, _translate("Form", "TEC. SUP. EN DESARROLLO DE SOFTWARE."))
         self.combo_carrera.setItemText(1, _translate("Form", "TEC. EN FRUTIHORTICOLA."))
         self.combo_carrera.setItemText(2, _translate("Form", "TEC. EN MARKETING Y PUBLICIDAD."))
         self.combo_carrera.setItemText(3, _translate("Form", "PROFESORADO EN T.I.C."))
         self.combo_carrera.setItemText(4, _translate("Form", "PROFESORADO EN TECNOLOGÍA."))
         self.combo_carrera.setItemText(5, _translate("Form", "PROFESORADO EN FISÍCA."))
+<<<<<<< HEAD
         self.label_8.setText(_translate("Form", "Complete los datos."))
         self.label_9.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Año de Carrera / Tecnicatura:</span></p></body></html>"))
         self.label_10.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Nombre:</span></p></body></html>"))
@@ -432,3 +506,10 @@ class Ui_Form(object):
         self.combo_anio.setItemText(2, _translate("Form", "3° Año."))
         self.combo_anio.setItemText(3, _translate("Form", "4° Año."))
         self.bt_volver.setText(_translate("Form", "⮜ Volver"))
+=======
+        self.combo_anio.setItemText(0, _translate("Form", "1 año"))
+        self.combo_anio.setItemText(1, _translate("Form", "2 año"))
+        self.combo_anio.setItemText(2, _translate("Form", "3 año"))
+        self.combo_anio.setItemText(3, _translate("Form", "4 año"))
+        self.BOTONVOLVERREGISTRO.setText(_translate("Form", "⮜ Volver"))
+>>>>>>> fe45491d85ac02f072e191d5fcf75ca60fed8a18
