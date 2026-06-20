@@ -62,9 +62,9 @@ class Ui_Form(object):
         self.frame.setFrameShape(QtWidgets.QFrame.Box)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.BotonGuardar = QtWidgets.QPushButton(self.frame)
-        self.BotonGuardar.setGeometry(QtCore.QRect(150, 470, 121, 41))
-        self.BotonGuardar.setStyleSheet("QPushButton {\n"
+        self.boton_guardar = QtWidgets.QPushButton(self.frame)
+        self.boton_guardar.setGeometry(QtCore.QRect(150, 470, 121, 41))
+        self.boton_guardar.setStyleSheet("QPushButton {\n"
 "    background-color: #1B5E20;   /* Verde oscuro */\n"
 "    color: white;\n"
 "    border-radius: 10px;\n"
@@ -87,7 +87,7 @@ class Ui_Form(object):
 "    background-color: #66BB6A;\n"
 "    border: 2px solid #A5D6A7;\n"
 "}")
-        self.BotonGuardar.setObjectName("BotonGuardar")
+        self.boton_guardar.setObjectName("boton_guardar")
         self.label_3 = QtWidgets.QLabel(self.frame)
         self.label_3.setGeometry(QtCore.QRect(50, 210, 61, 20))
         font = QtGui.QFont()
@@ -110,24 +110,24 @@ class Ui_Form(object):
         font.setPointSize(-1)
         self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
-        self.IngresoApellido = QtWidgets.QLineEdit(self.frame)
-        self.IngresoApellido.setGeometry(QtCore.QRect(50, 230, 321, 31))
-        self.IngresoApellido.setObjectName("IngresoApellido")
+        self.input_nombre = QtWidgets.QLineEdit(self.frame)
+        self.input_nombre.setGeometry(QtCore.QRect(50, 230, 321, 31))
+        self.input_nombre.setObjectName("input_nombre")
         self.label_6 = QtWidgets.QLabel(self.frame)
         self.label_6.setGeometry(QtCore.QRect(50, 360, 61, 31))
         self.label_6.setObjectName("label_6")
-        self.RegistroDNI = QtWidgets.QLineEdit(self.frame)
-        self.RegistroDNI.setGeometry(QtCore.QRect(50, 310, 321, 31))
-        self.RegistroDNI.setObjectName("RegistroDNI")
+        self.input_apellido = QtWidgets.QLineEdit(self.frame)
+        self.input_apellido.setGeometry(QtCore.QRect(50, 310, 321, 31))
+        self.input_apellido.setObjectName("input_apellido")
         self.label_7 = QtWidgets.QLabel(self.frame)
         self.label_7.setGeometry(QtCore.QRect(50, 120, 151, 31))
         self.label_7.setObjectName("label_7")
-        self.RegistroContrasena = QtWidgets.QLineEdit(self.frame)
-        self.RegistroContrasena.setGeometry(QtCore.QRect(50, 390, 321, 31))
-        self.RegistroContrasena.setObjectName("RegistroContrasena")
-        self.OPCIONESCARRERAS = QtWidgets.QComboBox(self.frame)
-        self.OPCIONESCARRERAS.setGeometry(QtCore.QRect(50, 150, 321, 31))
-        self.OPCIONESCARRERAS.setStyleSheet("QComboBox {\n"
+        self.input_dni = QtWidgets.QLineEdit(self.frame)
+        self.input_dni.setGeometry(QtCore.QRect(50, 390, 321, 31))
+        self.input_dni.setObjectName("input_dni")
+        self.combo_carrera = QtWidgets.QComboBox(self.frame)
+        self.combo_carrera.setGeometry(QtCore.QRect(50, 150, 321, 31))
+        self.combo_carrera.setStyleSheet("QComboBox {\n"
 "    background-color: #1E1E1E;\n"
 "    color: white;\n"
 "    border: 2px solid #42A5F5;\n"
@@ -163,13 +163,56 @@ class Ui_Form(object):
 "    selection-background-color: #42A5F5;\n"
 "    selection-color: white;\n"
 "}")
-        self.OPCIONESCARRERAS.setObjectName("OPCIONESCARRERAS")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
-        self.OPCIONESCARRERAS.addItem("")
+        self.combo_carrera.setObjectName("combo_carrera")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_carrera.addItem("")
+        self.combo_anio = QtWidgets.QComboBox(self.frame)
+        self.combo_anio.setGeometry(QtCore.QRect(30, 440, 101, 31))
+        self.combo_anio.setStyleSheet("QComboBox {\n"
+"    background-color: #1E1E1E;\n"
+"    color: white;\n"
+"    border: 2px solid #42A5F5;\n"
+"    border-radius: 12px;\n"
+"    padding: 6px 12px;\n"
+"    font-size: 14px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QComboBox:hover {\n"
+"    border: 2px solid #64B5F6;\n"
+"    background-color: #252525;\n"
+"}\n"
+"\n"
+"QComboBox:focus {\n"
+"    border: 2px solid #90CAF9;\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    border: none;\n"
+"    width: 30px;\n"
+"}\n"
+"\n"
+"QComboBox::down-arrow {\n"
+"    image: none;\n"
+"}\n"
+"\n"
+"QComboBox QAbstractItemView {\n"
+"    background-color: #2A2A2A;\n"
+"    color: white;\n"
+"    border: 2px solid #42A5F5;\n"
+"    border-radius: 8px;\n"
+"    selection-background-color: #42A5F5;\n"
+"    selection-color: white;\n"
+"}")
+        self.combo_anio.setObjectName("combo_anio")
+        self.combo_anio.addItem("")
+        self.combo_anio.addItem("")
+        self.combo_anio.addItem("")
+        self.combo_anio.addItem("")
         self.label = QtWidgets.QLabel(Form)
         self.label.setGeometry(QtCore.QRect(0, 0, 531, 721))
         self.label.setText("")
@@ -178,6 +221,7 @@ class Ui_Form(object):
         self.label.setObjectName("label")
         self.BOTONVOLVERREGISTRO = QtWidgets.QPushButton(Form)
         self.BOTONVOLVERREGISTRO.setGeometry(QtCore.QRect(560, 20, 91, 72))
+        self.BOTONVOLVERREGISTRO.setMinimumSize(QtCore.QSize(72, 72))
         self.BOTONVOLVERREGISTRO.setStyleSheet("QPushButton {\n"
 "    background-color: #6EC6FF;\n"
 "    border: none;\n"
@@ -201,18 +245,22 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
-        self.BotonGuardar.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" color:#55ff00;\">Guardar</span></p></body></html>"))
-        self.BotonGuardar.setText(_translate("Form", "Guardar"))
+        self.boton_guardar.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" color:#55ff00;\">Guardar</span></p></body></html>"))
+        self.boton_guardar.setText(_translate("Form", "Guardar"))
         self.label_3.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#ffffff;\">Nombre:</span></p></body></html>"))
         self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
         self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">REGISTRO</span></p></body></html>"))
         self.label_5.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600; color:#ffffff;\">Apellido:</span></p></body></html>"))
         self.label_6.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">D.N.I:</span></p></body></html>"))
         self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Carrera / Tecnicatura:</span></p></body></html>"))
-        self.OPCIONESCARRERAS.setItemText(0, _translate("Form", "TEC. SUP. EN DESARROLLO DE SOFTWARE."))
-        self.OPCIONESCARRERAS.setItemText(1, _translate("Form", "TEC. EN FRUTIHORTICOLA."))
-        self.OPCIONESCARRERAS.setItemText(2, _translate("Form", "TEC. EN MARKETING Y PUBLICIDAD."))
-        self.OPCIONESCARRERAS.setItemText(3, _translate("Form", "PROFESORADO EN T.I.C."))
-        self.OPCIONESCARRERAS.setItemText(4, _translate("Form", "PROFESORADO EN TECNOLOGÍA."))
-        self.OPCIONESCARRERAS.setItemText(5, _translate("Form", "PROFESORADO EN FISÍCA."))
+        self.combo_carrera.setItemText(0, _translate("Form", "TEC. SUP. EN DESARROLLO DE SOFTWARE."))
+        self.combo_carrera.setItemText(1, _translate("Form", "TEC. EN FRUTIHORTICOLA."))
+        self.combo_carrera.setItemText(2, _translate("Form", "TEC. EN MARKETING Y PUBLICIDAD."))
+        self.combo_carrera.setItemText(3, _translate("Form", "PROFESORADO EN T.I.C."))
+        self.combo_carrera.setItemText(4, _translate("Form", "PROFESORADO EN TECNOLOGÍA."))
+        self.combo_carrera.setItemText(5, _translate("Form", "PROFESORADO EN FISÍCA."))
+        self.combo_anio.setItemText(0, _translate("Form", "1 año"))
+        self.combo_anio.setItemText(1, _translate("Form", "2 año"))
+        self.combo_anio.setItemText(2, _translate("Form", "3 año"))
+        self.combo_anio.setItemText(3, _translate("Form", "4 año"))
         self.BOTONVOLVERREGISTRO.setText(_translate("Form", "⮜ Volver"))
