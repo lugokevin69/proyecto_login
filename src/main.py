@@ -19,7 +19,7 @@ class Login(QWidget, Ui_Form): #esto es para crear la clase Login que hereda de 
         self.BotonCrearCuenta.clicked.connect(self.abrir_registro)
 
     def abrir_registro(self):   #esto es para abrir la ventana de registro y cerrar la ventana de login
-        self.registro = Registro() 
+        self.registro = Registro()
         self.registro.show()
         self.close() 
 
@@ -28,13 +28,13 @@ class Login(QWidget, Ui_Form): #esto es para crear la clase Login que hereda de 
 class Registro(QWidget, Ui_Registro):
     def __init__(self):
         super().__init__()
-        
+    
         self.setupUi(self)
         #esto define la funcion al boton de volver
-        self.BOTONVOLVERREGISTRO.clicked.connect(self.volver_login)
+        self.bt_volver.clicked.connect(self.volver_login)
         
         #boton guardar
-        self.boton_guardar.clicked.connect(self.guardar_alumnos)
+        self.bt_guardar.clicked.connect(self.guardar_alumnos)
     
     #esto es para volver a la ventana de login
     def volver_login(self):
