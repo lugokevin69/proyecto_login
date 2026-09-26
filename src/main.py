@@ -1,30 +1,54 @@
-#Importa los paquetes y modulos necesarios
+﻿#Importa los paquetes y modulos necesarios
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox, QMainWindow
 
 #Importa las ventanas
 from src.login_ui import Ui_Form
 from src.interfaz_registro_ui import Ui_Form as Ui_Registro
+from src.interfaz_inicio_ui import Ui_MainWindow
 
 #Impota la conexion a la base de datos
 from database.conexion import conectar
+ 
+# Ventana INICIO (interfaz principal despues del login)
+class Inicio(QMainWindow, Ui_MainWindow):
 
-# 🟢 Ventana LOGIN
-class Login(QWidget, Ui_Form): #esto es para crear la clase Login que hereda de QWidget y Ui_Form (que es la interfaz del login)
-    def __init__(self): #esto es para inicializar la clase Login
-        super().__init__() #esto es para llamar al constructor de la clase QWidget y Ui_Form
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)
+
+        # Este boton define la funcion de volver a la ventana de login
+        self.bt_volver2.clicked.connect(self.volver_login)
+        
+    def volver_login(self):
+        self.login = Login()
+        self.login.show()
+        self.close()
+
+# Ventana LOGIN
+class Login(QWidget, Ui_Form):
+    def __init__(self):
+        super().__init__()
         self.setupUi(self) 
 
         #este codigo conecta el boton botonCrearCuenta y inicia la ventana interfaz_registro
         self.BotonCrearCuenta.clicked.connect(self.abrir_registro)
 
-    def abrir_registro(self):   #esto es para abrir la ventana de registro y cerrar la ventana de login
+        #este codigo conecta el boton bt_admin y abre la ventana de inicio
+        self.bt_admin.clicked.connect(self.abrir_inicio)
+
+    def abrir_registro(self):
         self.registro = Registro()
         self.registro.show()
         self.close() 
+        
+    def abrir_inicio(self):
+        self.inicio = Inicio()
+        self.inicio.show()
+        self.close()
+        
 
-
-# 🟣 Ventana REGISTRO
+# Ventana REGISTRO
 class Registro(QWidget, Ui_Registro):
     def __init__(self):
         super().__init__()
@@ -45,7 +69,7 @@ class Registro(QWidget, Ui_Registro):
     
     def guardar_alumnos(self):    #esta funcion es para guardar los datos de alumnos a sql
         
-        print("Entró a guardar_alumnos")
+        print("Entro a guardar_alumnos")
         
         #obtener datos de los campos Qline y Combo Box
         nombre = self.input_nombre.text()
@@ -62,15 +86,15 @@ class Registro(QWidget, Ui_Registro):
         print(carrera)
         print(anio)
             
-            # Verificar que no esten vacios
+        # Verificar que no esten vacios
             
         if nombre == "":
-                QMessageBox.warning(
-                    self,
-                    "error",
-                    "debe ingresar un nombre"
-                )
-                return
+            QMessageBox.warning(
+                self,
+                "error",
+                "debe ingresar un nombre"
+            )
+            return
             
         if dni == "":
             QMessageBox.warning(
@@ -82,20 +106,19 @@ class Registro(QWidget, Ui_Registro):
             
             
         try:
-                #Conectarse a MySQL
+            #Conectarse a MySQL
                 
             print("Conectando...")
             import mysql.connector    #esto es para importar el conector de mysql y usarlo.
 
-            print("Versión mysql.connector:", mysql.connector.__version__)
-            conexion = conectar() #llama la funcion conectar() Q está en el archivo conexion.py
-            print("Conexión Exitosa")
+            print("Version mysql.connector:", mysql.connector.__version__)
+            conexion = conectar() #llama la funcion conectar() Q esta en el archivo conexion.py
+            print("Conexion Exitosa")
             print("Creando cursor...")
             cursor = conexion.cursor() #crea un cursor para ejecutar consultas SQL
             
-                
-              #Aqui consultamos a sql para insertar los datos de los campos a la tabla de alumnos.
-            sql = """ #
+            #Aqui consultamos a sql para insertar los datos de los campos a la tabla de alumnos.
+            sql = """
             INSERT INTO alumnos
             (nombre,  apellido, dni, carrera, anio)
             VALUES (%s, %s, %s, %s, %s)   
@@ -108,7 +131,7 @@ class Registro(QWidget, Ui_Registro):
                 carrera,
                 anio
             )
-                # Ejecutar consulta
+            # Ejecutar consulta
                 
             print("Ejecutando INSERT...")
             cursor.execute(sql, datos)      #esto es para ejecutar la consulta SQL con los datos proporcionados.
@@ -118,7 +141,7 @@ class Registro(QWidget, Ui_Registro):
             conexion.commit() #esto es para que se guarden los cambios y no se borre cuando cerramos conexion.
                 
             # Cerrar conexion
-            print("Cerrando cursor y conexión...")
+            print("Cerrando cursor y conexion...")
             cursor.close()
             conexion.close()
                 
@@ -128,8 +151,8 @@ class Registro(QWidget, Ui_Registro):
                 
             QMessageBox.information(
                 self,
-                 "Exito",
-                 "Alumno registrado correctamente"
+                "Exito",
+                "Alumno registrado correctamente"
             )
                 
             #Estos limpian los campos despues de "Guardar"
@@ -148,9 +171,8 @@ class Registro(QWidget, Ui_Registro):
                 str(e)
             )
     
-            
 
-# 🚀 INICIO DEL PROGRAMA
+# INICIO DEL PROGRAMA
 if __name__ == "__main__":
     app = QApplication(sys.argv)     #esto es para iniciar la aplicacion de PyQt5
 
