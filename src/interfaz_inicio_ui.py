@@ -106,13 +106,13 @@ class Ui_MainWindow(object):
 "    font-weight: 600;\n"
 "}")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui\\../Documentos/proyecto git hub/proyecto_login/iconos/alumno.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("ui\\../iconos/alumno.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton.setIcon(icon)
         self.pushButton.setObjectName("pushButton")
         self.label = QtWidgets.QLabel(self.widget)
-        self.label.setGeometry(QtCore.QRect(70, 30, 121, 121))
+        self.label.setGeometry(QtCore.QRect(30, 20, 191, 171))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui\\../Documentos/proyecto git hub/proyecto_login/Logo del instituto png.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui\\../Logo del instituto png.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.pushButton_2 = QtWidgets.QPushButton(self.widget)
@@ -525,6 +525,31 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_6.setIcon(icon)
         self.pushButton_6.setObjectName("pushButton_6")
+        self.bt_volver2 = QtWidgets.QPushButton(self.widget)
+        self.bt_volver2.setGeometry(QtCore.QRect(60, 600, 101, 31))
+        self.bt_volver2.setStyleSheet("QPushButton{\n"
+"     background-color: #1B2330;\n"
+"     color: #FFFFFF;\n"
+"\n"
+"border: 1px solid #2F3A4F;\n"
+"border-radius: 12PX;\n"
+"\n"
+"font-family: \"segoe UI\";\n"
+"font-size: 10pt;\n"
+"font-weight: 600;\n"
+"\n"
+"padding: 8px 15px;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"     background-color: #242E3D;\n"
+"     border: 1px solid #3B82F6;\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"     background-color: #18202C;\n"
+"}")
+        self.bt_volver2.setObjectName("bt_volver2")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(330, 40, 251, 31))
         self.label_2.setStyleSheet("QLabel{\n"
@@ -542,31 +567,107 @@ class Ui_MainWindow(object):
 "    font-size: 9pt;\n"
 "}")
         self.label_3.setObjectName("label_3")
-        self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(270, 40, 47, 41))
-        self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("ui\\../Documentos/proyecto git hub/proyecto_login/iconos/gorro-de-graduacion.png"))
-        self.label_4.setScaledContents(True)
-        self.label_4.setObjectName("label_4")
-        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(1020, 40, 321, 37))
-        self.lineEdit.setStyleSheet("QLineEdit{\n"
-"    background-color: #222831;\n"
+        self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_7.setGeometry(QtCore.QRect(530, 170, 75, 21))
+        self.pushButton_7.setStyleSheet("QPushButton{\n"
+"    background: transparent;\n"
 "    color: white;\n"
-"    border: 1px solid #2A3140;\n"
-"    border-radius: 10px;\n"
-"    padding-left: 10px;\n"
-"    font-family: \"Segoe UI\";\n"
-"    font-size: 9pt;\n"
-"    min-height: 35px;\n"
+"    border: none;\n"
+"    font-size: 16px;\n"
 "}\n"
 "\n"
-"QLineEdit:focus{\n"
-"    border: 2px solid #2563EB;\n"
+"QPushButton:hover{\n"
+"    background-color: #323844;\n"
+"    border-radius: 5px;\n"
 "}")
-        self.lineEdit.setObjectName("lineEdit")
-        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
-        self.tableWidget.setGeometry(QtCore.QRect(280, 130, 351, 351))
+        self.pushButton_7.setText("")
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.frame_2 = QtWidgets.QFrame(self.centralwidget)
+        self.frame_2.setGeometry(QtCore.QRect(300, 120, 731, 531))
+        self.frame_2.setStyleSheet("QFrame{\n"
+"    background-color: #1E2433;\n"
+"    border: 2px solid #3A4358;\n"
+"    border-radius: 15px;\n"
+"}")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.frame = QtWidgets.QFrame(self.frame_2)
+        self.frame.setGeometry(QtCore.QRect(10, 10, 711, 61))
+        self.frame.setStyleSheet("QFrame{\n"
+"    background-color: #18243D;\n"
+"    border: 2px solid #2E5CB8;\n"
+"    border-radius: 15px;\n"
+"}")
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.label_5 = QtWidgets.QLabel(self.frame)
+        self.label_5.setGeometry(QtCore.QRect(50, 20, 441, 21))
+        self.label_5.setStyleSheet("QLabel{\n"
+"    color: white;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}\n"
+"QLabel{\n"
+"    color: white;\n"
+"    font-size: 14px;\n"
+"    font-weight: bold;\n"
+"    background: transparent;\n"
+"}")
+        self.label_5.setObjectName("label_5")
+        self.pushButton_13 = QtWidgets.QPushButton(self.frame)
+        self.pushButton_13.setGeometry(QtCore.QRect(460, 10, 81, 31))
+        self.pushButton_13.setStyleSheet("QPushButton{\n"
+"    background-color: #3A4358;\n"
+"    color: white;\n"
+"    border: 1px solid #4A5568;\n"
+"    border-radius: 4px;\n"
+"    padding: 8px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #4A5568;\n"
+"}")
+        self.pushButton_13.setObjectName("pushButton_13")
+        self.pushButton_14 = QtWidgets.QPushButton(self.frame)
+        self.pushButton_14.setGeometry(QtCore.QRect(540, 10, 81, 31))
+        self.pushButton_14.setStyleSheet("QPushButton{\n"
+"    background-color: #3A4358;\n"
+"    color: white;\n"
+"    border: 1px solid #4A5568;\n"
+"    border-radius: 4px;\n"
+"    padding: 8px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #4A5568;\n"
+"}")
+        self.pushButton_14.setObjectName("pushButton_14")
+        self.pushButton_15 = QtWidgets.QPushButton(self.frame)
+        self.pushButton_15.setGeometry(QtCore.QRect(620, 10, 81, 31))
+        self.pushButton_15.setStyleSheet("QPushButton{\n"
+"    font: 87 8pt \"Arial Black\";\n"
+"\n"
+"    background-color: #2E86FF;\n"
+"    color: white;\n"
+"    border: none;\n"
+"    border-radius: 4px;\n"
+"}")
+        self.pushButton_15.setObjectName("pushButton_15")
+        self.label_8 = QtWidgets.QLabel(self.frame)
+        self.label_8.setGeometry(QtCore.QRect(10, 10, 31, 41))
+        self.label_8.setStyleSheet("QLabel {\n"
+"        border: none;\n"
+"}")
+        self.label_8.setText("")
+        self.label_8.setPixmap(QtGui.QPixmap("ui\\../iconos/icons8-computadora-de-escritorio-100.png"))
+        self.label_8.setScaledContents(True)
+        self.label_8.setObjectName("label_8")
+        self.tableWidget = QtWidgets.QTableWidget(self.frame_2)
+        self.tableWidget.setGeometry(QtCore.QRect(10, 130, 641, 351))
         self.tableWidget.setStyleSheet("QTableWidget{\n"
 "    background-color: #23272F;\n"
 "    alternate-background-color: #1D2128;\n"
@@ -606,7 +707,7 @@ class Ui_MainWindow(object):
 "")
         self.tableWidget.setAlternatingRowColors(True)
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(3)
+        self.tableWidget.setColumnCount(6)
         self.tableWidget.setRowCount(10)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setVerticalHeaderItem(0, item)
@@ -629,104 +730,246 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setVerticalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
         self.tableWidget.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(2, item)
-        self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_7.setGeometry(QtCore.QRect(530, 170, 75, 21))
-        self.pushButton_7.setStyleSheet("QPushButton{\n"
-"    background: transparent;\n"
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(0, 85, 0))
+        brush.setStyle(QtCore.Qt.NoBrush)
+        item.setBackground(brush)
+        self.tableWidget.setItem(0, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(1, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(1, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(1, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(1, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(200, 66, 0))
+        brush.setStyle(QtCore.Qt.NoBrush)
+        item.setBackground(brush)
+        self.tableWidget.setItem(1, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(2, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(2, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(2, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(2, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(0, 85, 0))
+        brush.setStyle(QtCore.Qt.NoBrush)
+        item.setBackground(brush)
+        self.tableWidget.setItem(2, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(3, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(3, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(3, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(3, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        brush = QtGui.QBrush(QtGui.QColor(170, 0, 0))
+        brush.setStyle(QtCore.Qt.NoBrush)
+        item.setBackground(brush)
+        self.tableWidget.setItem(3, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(4, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(4, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(4, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(5, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(5, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(5, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(6, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(6, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(6, 4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(7, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(7, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(7, 4, item)
+        self.label_6 = QtWidgets.QLabel(self.frame_2)
+        self.label_6.setGeometry(QtCore.QRect(60, 90, 441, 31))
+        self.label_6.setStyleSheet("QLabel{\n"
 "    color: white;\n"
+"    background: transparent;\n"
 "    border: none;\n"
-"    font-size: 16px;\n"
+"}\n"
+"QLabel{\n"
+"    color: white;\n"
+"    font-size: 18px;\n"
+"    font-weight: bold;\n"
+"    background: transparent;\n"
+"}")
+        self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(self.frame_2)
+        self.label_7.setGeometry(QtCore.QRect(20, 90, 31, 31))
+        self.label_7.setStyleSheet("    border: none;")
+        self.label_7.setText("")
+        self.label_7.setPixmap(QtGui.QPixmap("ui\\../../../../../.designer/iconos/icons8-grupos-de-usuarios-100.png"))
+        self.label_7.setScaledContents(True)
+        self.label_7.setObjectName("label_7")
+        self.lineEdit = QtWidgets.QLineEdit(self.frame_2)
+        self.lineEdit.setGeometry(QtCore.QRect(320, 80, 221, 37))
+        self.lineEdit.setStyleSheet("QLineEdit{\n"
+"    background-color: #222831;\n"
+"    color: white;\n"
+"    border: 1px solid #2A3140;\n"
+"    border-radius: 10px;\n"
+"    padding-left: 10px;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 9pt;\n"
+"    min-height: 35px;\n"
 "}\n"
 "\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+"QLineEdit:focus{\n"
+"    border: 2px solid #2563EB;\n"
 "}")
-        self.pushButton_7.setText("")
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.pushButton_8 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_8.setGeometry(QtCore.QRect(530, 200, 75, 21))
-        self.pushButton_8.setStyleSheet("QPushButton{\n"
-"    background: transparent;\n"
+        self.lineEdit.setObjectName("lineEdit")
+        self.pushButton_16 = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_16.setGeometry(QtCore.QRect(550, 80, 141, 31))
+        self.pushButton_16.setStyleSheet("QPushButton{\n"
+"    font: 87 8pt \"Arial Black\";\n"
+"    background-color: #2E86FF;\n"
 "    color: white;\n"
 "    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+"    border-radius: 4px;\n"
 "}")
-        self.pushButton_8.setText("")
-        self.pushButton_8.setObjectName("pushButton_8")
-        self.pushButton_9 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_9.setGeometry(QtCore.QRect(530, 230, 75, 21))
-        self.pushButton_9.setStyleSheet("QPushButton{\n"
-"    background: transparent;\n"
-"    color: white;\n"
-"    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("ui\\../../../../../.designer/iconos/icons8-signo-más-64.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_16.setIcon(icon1)
+        self.pushButton_16.setObjectName("pushButton_16")
+        self.label_34 = QtWidgets.QLabel(self.frame_2)
+        self.label_34.setGeometry(QtCore.QRect(10, 90, 41, 31))
+        self.label_34.setStyleSheet("QLabel {\n"
+"       border: none;\n"
 "}")
-        self.pushButton_9.setText("")
-        self.pushButton_9.setObjectName("pushButton_9")
-        self.pushButton_10 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_10.setGeometry(QtCore.QRect(530, 260, 75, 21))
-        self.pushButton_10.setStyleSheet("QPushButton{\n"
-"    background: transparent;\n"
-"    color: white;\n"
-"    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+        self.label_34.setText("")
+        self.label_34.setPixmap(QtGui.QPixmap("ui\\../iconos/icons8-grupos-de-usuarios-100.png"))
+        self.label_34.setScaledContents(True)
+        self.label_34.setObjectName("label_34")
+        self.toolButton = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton.setGeometry(QtCore.QRect(640, 170, 34, 37))
+        self.toolButton.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
 "}")
-        self.pushButton_10.setText("")
-        self.pushButton_10.setObjectName("pushButton_10")
-        self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_11.setGeometry(QtCore.QRect(530, 290, 75, 21))
-        self.pushButton_11.setStyleSheet("QPushButton{\n"
-"    background: transparent;\n"
-"    color: white;\n"
-"    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+        self.toolButton.setObjectName("toolButton")
+        self.toolButton_2 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_2.setGeometry(QtCore.QRect(640, 200, 34, 37))
+        self.toolButton_2.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
 "}")
-        self.pushButton_11.setText("")
-        self.pushButton_11.setObjectName("pushButton_11")
-        self.pushButton_12 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_12.setGeometry(QtCore.QRect(530, 320, 75, 21))
-        self.pushButton_12.setStyleSheet("QPushButton{\n"
-"    background: transparent;\n"
-"    color: white;\n"
-"    border: none;\n"
-"    font-size: 16px;\n"
-"}\n"
-"\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+        self.toolButton_2.setObjectName("toolButton_2")
+        self.toolButton_3 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_3.setGeometry(QtCore.QRect(640, 230, 34, 37))
+        self.toolButton_3.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
 "}")
-        self.pushButton_12.setText("")
-        self.pushButton_12.setObjectName("pushButton_12")
-        self.bt_volver2 = QtWidgets.QPushButton(self.centralwidget)
-        self.bt_volver2.setGeometry(QtCore.QRect(280, 100, 75, 23))
-        self.bt_volver2.setObjectName("bt_volver2")
+        self.toolButton_3.setObjectName("toolButton_3")
+        self.toolButton_4 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_4.setGeometry(QtCore.QRect(640, 260, 34, 37))
+        self.toolButton_4.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_4.setObjectName("toolButton_4")
+        self.toolButton_5 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_5.setGeometry(QtCore.QRect(640, 290, 34, 37))
+        self.toolButton_5.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_5.setObjectName("toolButton_5")
+        self.toolButton_6 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_6.setGeometry(QtCore.QRect(640, 320, 34, 37))
+        self.toolButton_6.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_6.setObjectName("toolButton_6")
+        self.toolButton_7 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_7.setGeometry(QtCore.QRect(640, 350, 34, 37))
+        self.toolButton_7.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_7.setObjectName("toolButton_7")
+        self.toolButton_8 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_8.setGeometry(QtCore.QRect(640, 380, 34, 37))
+        self.toolButton_8.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_8.setObjectName("toolButton_8")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(270, 40, 51, 41))
+        self.label_4.setText("")
+        self.label_4.setPixmap(QtGui.QPixmap("ui\\../iconos/gorro-de-graduacion.png"))
+        self.label_4.setScaledContents(True)
+        self.label_4.setObjectName("label_4")
+        self.frame_2.raise_()
+        self.widget.raise_()
+        self.label_2.raise_()
+        self.label_3.raise_()
+        self.pushButton_7.raise_()
+        self.label_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -741,9 +984,13 @@ class Ui_MainWindow(object):
         self.pushButton_4.setText(_translate("MainWindow", "Profesorado T.I.C"))
         self.pushButton_5.setText(_translate("MainWindow", "Profesorado en Tecnología."))
         self.pushButton_6.setText(_translate("MainWindow", "Profesorado en Fisíca."))
+        self.bt_volver2.setText(_translate("MainWindow", "Volver"))
         self.label_2.setText(_translate("MainWindow", "Gestión de Alumnos"))
         self.label_3.setText(_translate("MainWindow", "Administración y seguimiento de estudiantes"))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "🔍 Buscar alumno..."))
+        self.label_5.setText(_translate("MainWindow", "Tecnicatura Superior en Desarrollo de Software."))
+        self.pushButton_13.setText(_translate("MainWindow", "1° Año."))
+        self.pushButton_14.setText(_translate("MainWindow", "2° Año."))
+        self.pushButton_15.setText(_translate("MainWindow", "3° Año."))
         item = self.tableWidget.verticalHeaderItem(0)
         item.setText(_translate("MainWindow", "1"))
         item = self.tableWidget.verticalHeaderItem(1)
@@ -770,4 +1017,79 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "APELLIDO"))
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "D.N.I"))
-        self.bt_volver2.setText(_translate("MainWindow", "PushButton"))
+        item = self.tableWidget.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "TELEFONO"))
+        item = self.tableWidget.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "CORREO "))
+        __sortingEnabled = self.tableWidget.isSortingEnabled()
+        self.tableWidget.setSortingEnabled(False)
+        item = self.tableWidget.item(0, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(0, 3)
+        item.setText(_translate("MainWindow", "3725- XXXXXX"))
+        item = self.tableWidget.item(0, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(1, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(1, 3)
+        item.setText(_translate("MainWindow", "3725- XXXXXX"))
+        item = self.tableWidget.item(1, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(2, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(2, 3)
+        item.setText(_translate("MainWindow", "3624- XXXXXX"))
+        item = self.tableWidget.item(2, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(3, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(3, 3)
+        item.setText(_translate("MainWindow", "3624- XXXXXX"))
+        item = self.tableWidget.item(3, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(4, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(4, 3)
+        item.setText(_translate("MainWindow", "3624- XXXXXX"))
+        item = self.tableWidget.item(4, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(5, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(5, 3)
+        item.setText(_translate("MainWindow", "3624- XXXXXX"))
+        item = self.tableWidget.item(5, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(6, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(6, 3)
+        item.setText(_translate("MainWindow", "3725- XXXXXX"))
+        item = self.tableWidget.item(6, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        item = self.tableWidget.item(7, 2)
+        item.setText(_translate("MainWindow", "00.000.000"))
+        item = self.tableWidget.item(7, 3)
+        item.setText(_translate("MainWindow", "3725- XXXXXX"))
+        item = self.tableWidget.item(7, 4)
+        item.setText(_translate("MainWindow", "-@gmail.com"))
+        self.tableWidget.setSortingEnabled(__sortingEnabled)
+        self.label_6.setText(_translate("MainWindow", "Alumnos - 3° AÑO."))
+        self.lineEdit.setPlaceholderText(_translate("MainWindow", "🔍 Buscar alumno..."))
+        self.pushButton_16.setText(_translate("MainWindow", "Agregar Alumno"))
+        self.toolButton.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_2.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_3.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_4.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_5.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_6.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_7.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_8.setText(_translate("MainWindow", "⋮"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
