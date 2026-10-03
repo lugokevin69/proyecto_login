@@ -666,158 +666,179 @@ class Ui_MainWindow(object):
         self.label_8.setPixmap(QtGui.QPixmap("ui\\../iconos/icons8-computadora-de-escritorio-100.png"))
         self.label_8.setScaledContents(True)
         self.label_8.setObjectName("label_8")
-        self.tableWidget = QtWidgets.QTableWidget(self.frame_2)
-        self.tableWidget.setGeometry(QtCore.QRect(10, 130, 641, 351))
-        self.tableWidget.setStyleSheet("QTableWidget{\n"
-"    background-color: #23272F;\n"
-"    alternate-background-color: #1D2128;\n"
+        self.tabla_alumnos = QtWidgets.QTableWidget(self.frame_2)
+        self.tabla_alumnos.setGeometry(QtCore.QRect(20, 130, 621, 351))
+        self.tabla_alumnos.setStyleSheet("QTableWidget {\n"
+"    background-color: #1B1F26;\n"
+"    alternate-background-color: #222731;\n"
 "    color: white;\n"
-"    border: none;\n"
-"    gridline-color: #323844;\n"
-"    font-family: \"Segoe UI\";\n"
-"    font-size: 9pt;\n"
-"    selection-background-color: #3A4250;\n"
+"\n"
+"    border: 0px;\n"
+"    outline: none;\n"
+"    gridline-color: transparent;\n"
+"\n"
+"    selection-background-color: #2F80ED;\n"
 "    selection-color: white;\n"
 "}\n"
 "\n"
-"QHeaderView::section{\n"
-"    background-color: #2D3440;\n"
+"/* Eliminar los bordes de los encabezados */\n"
+"\n"
+"QHeaderView {\n"
+"    border: none;\n"
+"    background-color: transparent;\n"
+"}\n"
+"\n"
+"/* Encabezado horizontal */\n"
+"\n"
+"QHeaderView::section:horizontal {\n"
+"    background-color: #293449;\n"
 "    color: white;\n"
 "    border: none;\n"
-"    padding: 8px;\n"
-"    font-weight: 600;\n"
+"    padding: 10px;\n"
+"    font-weight: bold;\n"
 "}\n"
 "\n"
-"QTableCornerButton::section{\n"
-"    background-color: #2D3440;\n"
-"    border: none;\n"
-"}\n"
+"/* Encabezado vertical */\n"
 "\n"
-"QPushButton{\n"
-"    background: transparent;\n"
+"QHeaderView::section:vertical {\n"
+"    background-color: #293449;\n"
 "    color: white;\n"
 "    border: none;\n"
-"    font-size: 16px;\n"
 "}\n"
 "\n"
-"QPushButton:hover{\n"
-"    background-color: #323844;\n"
-"    border-radius: 5px;\n"
+"/* Eliminar el relieve de la esquina */\n"
+"\n"
+"QTableCornerButton::section {\n"
+"    border: none;\n"
+"    background-color: #293449;\n"
 "}\n"
-"")
-        self.tableWidget.setAlternatingRowColors(True)
-        self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(6)
-        self.tableWidget.setRowCount(10)
+"\n"
+"/* Eliminar el efecto de foco */\n"
+"\n"
+"QTableWidget::item {\n"
+"    border: none;\n"
+"    outline: none;\n"
+"}")
+        self.tabla_alumnos.setAlternatingRowColors(True)
+        self.tabla_alumnos.setObjectName("tabla_alumnos")
+        self.tabla_alumnos.setColumnCount(5)
+        self.tabla_alumnos.setRowCount(10)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(0, item)
+        self.tabla_alumnos.setVerticalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(1, item)
+        self.tabla_alumnos.setVerticalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(2, item)
+        self.tabla_alumnos.setVerticalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(3, item)
+        self.tabla_alumnos.setVerticalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(4, item)
+        self.tabla_alumnos.setVerticalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(5, item)
+        self.tabla_alumnos.setVerticalHeaderItem(5, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(6, item)
+        self.tabla_alumnos.setVerticalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(7, item)
+        self.tabla_alumnos.setVerticalHeaderItem(7, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(8, item)
+        self.tabla_alumnos.setVerticalHeaderItem(8, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setVerticalHeaderItem(9, item)
+        self.tabla_alumnos.setVerticalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
         item.setTextAlignment(QtCore.Qt.AlignCenter)
-        self.tableWidget.setHorizontalHeaderItem(0, item)
+        self.tabla_alumnos.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(1, item)
+        self.tabla_alumnos.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(2, item)
+        self.tabla_alumnos.setHorizontalHeaderItem(2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(3, item)
+        self.tabla_alumnos.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(4, item)
+        self.tabla_alumnos.setHorizontalHeaderItem(4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setHorizontalHeaderItem(5, item)
+        item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEditable|QtCore.Qt.ItemIsDragEnabled|QtCore.Qt.ItemIsUserCheckable|QtCore.Qt.ItemIsEnabled)
+        self.tabla_alumnos.setItem(0, 0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(0, 0, item)
+        self.tabla_alumnos.setItem(0, 1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(0, 1, item)
+        self.tabla_alumnos.setItem(0, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(0, 2, item)
-        item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(0, 3, item)
+        self.tabla_alumnos.setItem(0, 3, item)
         item = QtWidgets.QTableWidgetItem()
         brush = QtGui.QBrush(QtGui.QColor(0, 85, 0))
         brush.setStyle(QtCore.Qt.NoBrush)
         item.setBackground(brush)
-        self.tableWidget.setItem(0, 4, item)
+        self.tabla_alumnos.setItem(0, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(1, 0, item)
+        self.tabla_alumnos.setItem(1, 0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(1, 1, item)
+        self.tabla_alumnos.setItem(1, 1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(1, 2, item)
+        self.tabla_alumnos.setItem(1, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(1, 3, item)
+        self.tabla_alumnos.setItem(1, 3, item)
         item = QtWidgets.QTableWidgetItem()
         brush = QtGui.QBrush(QtGui.QColor(200, 66, 0))
         brush.setStyle(QtCore.Qt.NoBrush)
         item.setBackground(brush)
-        self.tableWidget.setItem(1, 4, item)
+        self.tabla_alumnos.setItem(1, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(2, 0, item)
+        self.tabla_alumnos.setItem(2, 0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(2, 1, item)
+        self.tabla_alumnos.setItem(2, 1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(2, 2, item)
+        self.tabla_alumnos.setItem(2, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(2, 3, item)
+        self.tabla_alumnos.setItem(2, 3, item)
         item = QtWidgets.QTableWidgetItem()
         brush = QtGui.QBrush(QtGui.QColor(0, 85, 0))
         brush.setStyle(QtCore.Qt.NoBrush)
         item.setBackground(brush)
-        self.tableWidget.setItem(2, 4, item)
+        self.tabla_alumnos.setItem(2, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(3, 0, item)
+        self.tabla_alumnos.setItem(3, 0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(3, 1, item)
+        self.tabla_alumnos.setItem(3, 1, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(3, 2, item)
+        self.tabla_alumnos.setItem(3, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(3, 3, item)
+        self.tabla_alumnos.setItem(3, 3, item)
         item = QtWidgets.QTableWidgetItem()
         brush = QtGui.QBrush(QtGui.QColor(170, 0, 0))
         brush.setStyle(QtCore.Qt.NoBrush)
         item.setBackground(brush)
-        self.tableWidget.setItem(3, 4, item)
+        self.tabla_alumnos.setItem(3, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(4, 2, item)
+        self.tabla_alumnos.setItem(4, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(4, 3, item)
+        self.tabla_alumnos.setItem(4, 3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(4, 4, item)
+        self.tabla_alumnos.setItem(4, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(5, 2, item)
+        self.tabla_alumnos.setItem(5, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(5, 3, item)
+        self.tabla_alumnos.setItem(5, 3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(5, 4, item)
+        self.tabla_alumnos.setItem(5, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(6, 2, item)
+        self.tabla_alumnos.setItem(6, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(6, 3, item)
+        self.tabla_alumnos.setItem(6, 3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(6, 4, item)
+        self.tabla_alumnos.setItem(6, 4, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(7, 2, item)
+        self.tabla_alumnos.setItem(7, 2, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(7, 3, item)
+        self.tabla_alumnos.setItem(7, 3, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget.setItem(7, 4, item)
+        self.tabla_alumnos.setItem(7, 4, item)
+        self.tabla_alumnos.horizontalHeader().setVisible(True)
+        self.tabla_alumnos.horizontalHeader().setCascadingSectionResizes(False)
+        self.tabla_alumnos.horizontalHeader().setHighlightSections(True)
+        self.tabla_alumnos.horizontalHeader().setSortIndicatorShown(False)
+        self.tabla_alumnos.horizontalHeader().setStretchLastSection(True)
+        self.tabla_alumnos.verticalHeader().setCascadingSectionResizes(True)
+        self.tabla_alumnos.verticalHeader().setSortIndicatorShown(True)
+        self.tabla_alumnos.verticalHeader().setStretchLastSection(True)
         self.label_6 = QtWidgets.QLabel(self.frame_2)
         self.label_6.setGeometry(QtCore.QRect(60, 90, 441, 31))
         self.label_6.setStyleSheet("QLabel{\n"
@@ -991,87 +1012,39 @@ class Ui_MainWindow(object):
         self.pushButton_13.setText(_translate("MainWindow", "1° Año."))
         self.pushButton_14.setText(_translate("MainWindow", "2° Año."))
         self.pushButton_15.setText(_translate("MainWindow", "3° Año."))
-        item = self.tableWidget.verticalHeaderItem(0)
+        item = self.tabla_alumnos.verticalHeaderItem(0)
         item.setText(_translate("MainWindow", "1"))
-        item = self.tableWidget.verticalHeaderItem(1)
+        item = self.tabla_alumnos.verticalHeaderItem(1)
         item.setText(_translate("MainWindow", "2"))
-        item = self.tableWidget.verticalHeaderItem(2)
+        item = self.tabla_alumnos.verticalHeaderItem(2)
         item.setText(_translate("MainWindow", "3"))
-        item = self.tableWidget.verticalHeaderItem(3)
+        item = self.tabla_alumnos.verticalHeaderItem(3)
         item.setText(_translate("MainWindow", "4"))
-        item = self.tableWidget.verticalHeaderItem(4)
+        item = self.tabla_alumnos.verticalHeaderItem(4)
         item.setText(_translate("MainWindow", "5"))
-        item = self.tableWidget.verticalHeaderItem(5)
+        item = self.tabla_alumnos.verticalHeaderItem(5)
         item.setText(_translate("MainWindow", "6"))
-        item = self.tableWidget.verticalHeaderItem(6)
+        item = self.tabla_alumnos.verticalHeaderItem(6)
         item.setText(_translate("MainWindow", "7"))
-        item = self.tableWidget.verticalHeaderItem(7)
+        item = self.tabla_alumnos.verticalHeaderItem(7)
         item.setText(_translate("MainWindow", "8"))
-        item = self.tableWidget.verticalHeaderItem(8)
+        item = self.tabla_alumnos.verticalHeaderItem(8)
         item.setText(_translate("MainWindow", "9"))
-        item = self.tableWidget.verticalHeaderItem(9)
+        item = self.tabla_alumnos.verticalHeaderItem(9)
         item.setText(_translate("MainWindow", "10"))
-        item = self.tableWidget.horizontalHeaderItem(0)
+        item = self.tabla_alumnos.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "NOMBRE"))
-        item = self.tableWidget.horizontalHeaderItem(1)
+        item = self.tabla_alumnos.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "APELLIDO"))
-        item = self.tableWidget.horizontalHeaderItem(2)
+        item = self.tabla_alumnos.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "D.N.I"))
-        item = self.tableWidget.horizontalHeaderItem(3)
+        item = self.tabla_alumnos.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "TELEFONO"))
-        item = self.tableWidget.horizontalHeaderItem(4)
+        item = self.tabla_alumnos.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "CORREO "))
-        __sortingEnabled = self.tableWidget.isSortingEnabled()
-        self.tableWidget.setSortingEnabled(False)
-        item = self.tableWidget.item(0, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(0, 3)
-        item.setText(_translate("MainWindow", "3725- XXXXXX"))
-        item = self.tableWidget.item(0, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(1, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(1, 3)
-        item.setText(_translate("MainWindow", "3725- XXXXXX"))
-        item = self.tableWidget.item(1, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(2, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(2, 3)
-        item.setText(_translate("MainWindow", "3624- XXXXXX"))
-        item = self.tableWidget.item(2, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(3, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(3, 3)
-        item.setText(_translate("MainWindow", "3624- XXXXXX"))
-        item = self.tableWidget.item(3, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(4, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(4, 3)
-        item.setText(_translate("MainWindow", "3624- XXXXXX"))
-        item = self.tableWidget.item(4, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(5, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(5, 3)
-        item.setText(_translate("MainWindow", "3624- XXXXXX"))
-        item = self.tableWidget.item(5, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(6, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(6, 3)
-        item.setText(_translate("MainWindow", "3725- XXXXXX"))
-        item = self.tableWidget.item(6, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        item = self.tableWidget.item(7, 2)
-        item.setText(_translate("MainWindow", "00.000.000"))
-        item = self.tableWidget.item(7, 3)
-        item.setText(_translate("MainWindow", "3725- XXXXXX"))
-        item = self.tableWidget.item(7, 4)
-        item.setText(_translate("MainWindow", "-@gmail.com"))
-        self.tableWidget.setSortingEnabled(__sortingEnabled)
+        __sortingEnabled = self.tabla_alumnos.isSortingEnabled()
+        self.tabla_alumnos.setSortingEnabled(False)
+        self.tabla_alumnos.setSortingEnabled(__sortingEnabled)
         self.label_6.setText(_translate("MainWindow", "Alumnos - 3° AÑO."))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "🔍 Buscar alumno..."))
         self.pushButton_16.setText(_translate("MainWindow", "Agregar Alumno"))
@@ -1083,13 +1056,3 @@ class Ui_MainWindow(object):
         self.toolButton_6.setText(_translate("MainWindow", "⋮"))
         self.toolButton_7.setText(_translate("MainWindow", "⋮"))
         self.toolButton_8.setText(_translate("MainWindow", "⋮"))
-
-
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
-    sys.exit(app.exec_())

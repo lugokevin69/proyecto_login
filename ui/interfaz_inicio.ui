@@ -917,57 +917,95 @@ QPushButton:hover{
       </property>
      </widget>
     </widget>
-    <widget class="QTableWidget" name="tableWidget">
+    <widget class="QTableWidget" name="tabla_alumnos">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>130</y>
-       <width>641</width>
+       <width>621</width>
        <height>351</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QTableWidget{
-    background-color: #23272F;
-    alternate-background-color: #1D2128;
+      <string notr="true">QTableWidget {
+    background-color: #1B1F26;
+    alternate-background-color: #222731;
     color: white;
-    border: none;
-    gridline-color: #323844;
-    font-family: &quot;Segoe UI&quot;;
-    font-size: 9pt;
-    selection-background-color: #3A4250;
+
+    border: 0px;
+    outline: none;
+    gridline-color: transparent;
+
+    selection-background-color: #2F80ED;
     selection-color: white;
 }
 
-QHeaderView::section{
-    background-color: #2D3440;
+/* Eliminar los bordes de los encabezados */
+
+QHeaderView {
+    border: none;
+    background-color: transparent;
+}
+
+/* Encabezado horizontal */
+
+QHeaderView::section:horizontal {
+    background-color: #293449;
     color: white;
     border: none;
-    padding: 8px;
-    font-weight: 600;
+    padding: 10px;
+    font-weight: bold;
 }
 
-QTableCornerButton::section{
-    background-color: #2D3440;
-    border: none;
-}
+/* Encabezado vertical */
 
-QPushButton{
-    background: transparent;
+QHeaderView::section:vertical {
+    background-color: #293449;
     color: white;
     border: none;
-    font-size: 16px;
 }
 
-QPushButton:hover{
-    background-color: #323844;
-    border-radius: 5px;
+/* Eliminar el relieve de la esquina */
+
+QTableCornerButton::section {
+    border: none;
+    background-color: #293449;
 }
-</string>
+
+/* Eliminar el efecto de foco */
+
+QTableWidget::item {
+    border: none;
+    outline: none;
+}</string>
      </property>
      <property name="alternatingRowColors">
       <bool>true</bool>
      </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
      <row>
       <property name="text">
        <string>1</string>
@@ -1046,14 +1084,12 @@ QPushButton:hover{
        <string>CORREO </string>
       </property>
      </column>
-     <column>
-      <property name="text">
-       <string/>
-      </property>
-     </column>
      <item row="0" column="0">
       <property name="text">
        <string/>
+      </property>
+      <property name="flags">
+       <set>ItemIsSelectable|ItemIsEditable|ItemIsDragEnabled|ItemIsUserCheckable|ItemIsEnabled</set>
       </property>
      </item>
      <item row="0" column="1">
@@ -1063,17 +1099,17 @@ QPushButton:hover{
      </item>
      <item row="0" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="0" column="3">
       <property name="text">
-       <string>3725- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="0" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
       <property name="background">
        <brush brushstyle="NoBrush">
@@ -1097,17 +1133,17 @@ QPushButton:hover{
      </item>
      <item row="1" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="1" column="3">
       <property name="text">
-       <string>3725- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="1" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
       <property name="background">
        <brush brushstyle="NoBrush">
@@ -1131,17 +1167,17 @@ QPushButton:hover{
      </item>
      <item row="2" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="2" column="3">
       <property name="text">
-       <string>3624- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="2" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
       <property name="background">
        <brush brushstyle="NoBrush">
@@ -1165,17 +1201,17 @@ QPushButton:hover{
      </item>
      <item row="3" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="3" column="3">
       <property name="text">
-       <string>3624- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="3" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
       <property name="background">
        <brush brushstyle="NoBrush">
@@ -1189,62 +1225,62 @@ QPushButton:hover{
      </item>
      <item row="4" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="4" column="3">
       <property name="text">
-       <string>3624- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="4" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
      </item>
      <item row="5" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="5" column="3">
       <property name="text">
-       <string>3624- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="5" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
      </item>
      <item row="6" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="6" column="3">
       <property name="text">
-       <string>3725- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="6" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
      </item>
      <item row="7" column="2">
       <property name="text">
-       <string>00.000.000</string>
+       <string/>
       </property>
      </item>
      <item row="7" column="3">
       <property name="text">
-       <string>3725- XXXXXX</string>
+       <string/>
       </property>
      </item>
      <item row="7" column="4">
       <property name="text">
-       <string>-@gmail.com</string>
+       <string/>
       </property>
      </item>
     </widget>
