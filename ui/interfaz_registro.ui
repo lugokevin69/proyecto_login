@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1130</width>
+    <width>1386</width>
     <height>715</height>
    </rect>
   </property>
@@ -56,9 +56,9 @@ QPushButton:pressed {
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>730</x>
+     <x>440</x>
      <y>70</y>
-     <width>431</width>
+     <width>781</width>
      <height>571</height>
     </rect>
    </property>
@@ -99,16 +99,16 @@ QMainWindow{
    <widget class="QPushButton" name="bt_guardar">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>490</y>
+      <x>540</x>
+      <y>460</y>
       <width>151</width>
-      <height>51</height>
+      <height>64</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
       <width>0</width>
-      <height>5</height>
+      <height>64</height>
      </size>
     </property>
     <property name="whatsThis">
@@ -180,7 +180,7 @@ QPushButton:pressed{
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>290</y>
+      <y>310</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -207,14 +207,14 @@ QPushButton:pressed{
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Carrera / Tecnicatura:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Carrera / Tecnicatura:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="input_apellido">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>360</y>
+      <y>390</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -350,7 +350,7 @@ QLabel{
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>190</y>
+      <y>200</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -367,14 +367,14 @@ QLabel{
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Año de Carrera / Tecnicatura:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Año de Carrera / Tecnicatura:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>260</y>
+      <y>280</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -391,14 +391,14 @@ QLabel{
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Nombre:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Nombre:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>330</y>
+      <y>360</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -415,14 +415,14 @@ QLabel{
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Apellido:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Apellido:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>400</y>
+      <y>440</y>
       <width>181</width>
       <height>21</height>
      </rect>
@@ -439,14 +439,14 @@ QLabel{
 }</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;D.N.I:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;D.N.I:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="input_dni">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>430</y>
+      <y>470</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -480,7 +480,7 @@ QLabel{
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>190</y>
+      <y>200</y>
       <width>21</width>
       <height>21</height>
      </rect>
@@ -507,7 +507,7 @@ QLabel{
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>220</y>
+      <y>230</y>
       <width>321</width>
       <height>31</height>
      </rect>
@@ -575,7 +575,7 @@ QComboBox QAbstractItemView {
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>260</y>
+      <y>280</y>
       <width>20</width>
       <height>20</height>
      </rect>
@@ -602,7 +602,7 @@ QComboBox QAbstractItemView {
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>330</y>
+      <y>360</y>
       <width>21</width>
       <height>21</height>
      </rect>
@@ -629,7 +629,7 @@ QComboBox QAbstractItemView {
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>400</y>
+      <y>440</y>
       <width>21</width>
       <height>21</height>
      </rect>
@@ -647,6 +647,347 @@ QComboBox QAbstractItemView {
     </property>
     <property name="pixmap">
      <pixmap>../iconos/licencia-de-conducir.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>120</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    color: #F8FAFC;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: none;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Localidad:&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>200</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    color: #F8FAFC;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: none;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fecha de Nacimiento:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="combo_localidad">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>150</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+    background-color: #1E1E1E;
+    color: white;
+    border: 2px solid #42A5F5;
+    border-radius: 12px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QComboBox:hover {
+    border: 2px solid #64B5F6;
+    background-color: #252525;
+}
+
+QComboBox:focus {
+    border: 2px solid #90CAF9;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox::down-arrow {
+    image: none;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2A2A2A;
+    color: white;
+    border: 2px solid #42A5F5;
+    border-radius: 8px;
+    selection-background-color: #42A5F5;
+    selection-color: white;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Colonias Unidas.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Colonia Elisa.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Capitan Solari.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>La Escondida.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>General San Martin.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Las Garcitas.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ciervo Petiso.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Laguna Limpia.</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Otro.</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QDateEdit" name="date">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>230</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QDateEdit {
+    background-color: #2b2b2b;
+    color: white;
+    border: 2px solid #00B4D8;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #00B4D8;
+    background-color: #383838;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>200</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    border: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../iconos/calendario (1).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>120</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    border: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../iconos/marcador-de-posicion.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>280</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    color: #F8FAFC;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: none;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Correo Electronico:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>360</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    color: #F8FAFC;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 12pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: none;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;N° Teléfono:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="gmail">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>310</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phone_number">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>390</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>360</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    border: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../iconos/contactos-telefonicos.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>280</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+    border: 0px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../iconos/email.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -671,13 +1012,25 @@ QComboBox QAbstractItemView {
    <zorder>label_13</zorder>
    <zorder>combo_anio</zorder>
    <zorder>input_nombre</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>combo_localidad</zorder>
+   <zorder>date</zorder>
+   <zorder>label_16</zorder>
+   <zorder>label_17</zorder>
+   <zorder>label_18</zorder>
+   <zorder>label_19</zorder>
+   <zorder>gmail</zorder>
+   <zorder>phone_number</zorder>
+   <zorder>label_20</zorder>
+   <zorder>label_21</zorder>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>501</width>
+     <width>421</width>
      <height>721</height>
     </rect>
    </property>
@@ -694,8 +1047,8 @@ QComboBox QAbstractItemView {
   <widget class="QPushButton" name="bt_volver">
    <property name="geometry">
     <rect>
-     <x>560</x>
-     <y>20</y>
+     <x>440</x>
+     <y>10</y>
      <width>91</width>
      <height>51</height>
     </rect>

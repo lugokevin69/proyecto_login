@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(1130, 715)
+        Form.resize(1386, 715)
         Form.setStyleSheet("\n"
 "QWidget{\n"
 "    background-color: #111720\n"
@@ -54,7 +54,7 @@ class Ui_Form(object):
 "    background-color: #2f2f2f;\n"
 "}")
         self.frame = QtWidgets.QFrame(Form)
-        self.frame.setGeometry(QtCore.QRect(730, 70, 431, 571))
+        self.frame.setGeometry(QtCore.QRect(440, 70, 781, 571))
         self.frame.setStyleSheet("QFrame{\n"
 "    background-color: qlineargradient(\n"
 "        x1:0, y1:0,\n"
@@ -85,8 +85,8 @@ class Ui_Form(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.bt_guardar = QtWidgets.QPushButton(self.frame)
-        self.bt_guardar.setGeometry(QtCore.QRect(150, 490, 151, 51))
-        self.bt_guardar.setMinimumSize(QtCore.QSize(0, 5))
+        self.bt_guardar.setGeometry(QtCore.QRect(540, 460, 151, 64))
+        self.bt_guardar.setMinimumSize(QtCore.QSize(0, 64))
         self.bt_guardar.setStyleSheet("QPushButton{\n"
 "    background-color: #16A34A;\n"
 "    color: white;\n"
@@ -127,7 +127,7 @@ class Ui_Form(object):
 "}")
         self.TextoLogin.setObjectName("TextoLogin")
         self.input_nombre = QtWidgets.QLineEdit(self.frame)
-        self.input_nombre.setGeometry(QtCore.QRect(50, 290, 321, 31))
+        self.input_nombre.setGeometry(QtCore.QRect(50, 310, 321, 31))
         self.input_nombre.setObjectName("input_nombre")
         self.label_7 = QtWidgets.QLabel(self.frame)
         self.label_7.setGeometry(QtCore.QRect(70, 120, 171, 21))
@@ -142,7 +142,7 @@ class Ui_Form(object):
 "}")
         self.label_7.setObjectName("label_7")
         self.input_apellido = QtWidgets.QLineEdit(self.frame)
-        self.input_apellido.setGeometry(QtCore.QRect(50, 360, 321, 31))
+        self.input_apellido.setGeometry(QtCore.QRect(50, 390, 321, 31))
         self.input_apellido.setObjectName("input_apellido")
         self.combo_carrera = QtWidgets.QComboBox(self.frame)
         self.combo_carrera.setGeometry(QtCore.QRect(50, 150, 321, 31))
@@ -211,7 +211,7 @@ class Ui_Form(object):
 "}")
         self.label_8.setObjectName("label_8")
         self.label_9 = QtWidgets.QLabel(self.frame)
-        self.label_9.setGeometry(QtCore.QRect(70, 190, 181, 21))
+        self.label_9.setGeometry(QtCore.QRect(70, 200, 181, 21))
         self.label_9.setStyleSheet("QLabel{\n"
 "    color: #F8FAFC;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -223,7 +223,7 @@ class Ui_Form(object):
 "}")
         self.label_9.setObjectName("label_9")
         self.label_10 = QtWidgets.QLabel(self.frame)
-        self.label_10.setGeometry(QtCore.QRect(70, 260, 181, 21))
+        self.label_10.setGeometry(QtCore.QRect(70, 280, 181, 21))
         self.label_10.setStyleSheet("QLabel{\n"
 "    color: #F8FAFC;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -235,7 +235,7 @@ class Ui_Form(object):
 "}")
         self.label_10.setObjectName("label_10")
         self.label_11 = QtWidgets.QLabel(self.frame)
-        self.label_11.setGeometry(QtCore.QRect(70, 330, 181, 21))
+        self.label_11.setGeometry(QtCore.QRect(70, 360, 181, 21))
         self.label_11.setStyleSheet("QLabel{\n"
 "    color: #F8FAFC;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -247,7 +247,7 @@ class Ui_Form(object):
 "}")
         self.label_11.setObjectName("label_11")
         self.label_12 = QtWidgets.QLabel(self.frame)
-        self.label_12.setGeometry(QtCore.QRect(70, 400, 181, 21))
+        self.label_12.setGeometry(QtCore.QRect(70, 440, 181, 21))
         self.label_12.setStyleSheet("QLabel{\n"
 "    color: #F8FAFC;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -259,7 +259,7 @@ class Ui_Form(object):
 "}")
         self.label_12.setObjectName("label_12")
         self.input_dni = QtWidgets.QLineEdit(self.frame)
-        self.input_dni.setGeometry(QtCore.QRect(50, 430, 321, 31))
+        self.input_dni.setGeometry(QtCore.QRect(50, 470, 321, 31))
         self.input_dni.setObjectName("input_dni")
         self.label_3 = QtWidgets.QLabel(self.frame)
         self.label_3.setGeometry(QtCore.QRect(40, 120, 21, 21))
@@ -271,7 +271,7 @@ class Ui_Form(object):
         self.label_3.setScaledContents(True)
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(self.frame)
-        self.label_4.setGeometry(QtCore.QRect(40, 190, 21, 21))
+        self.label_4.setGeometry(QtCore.QRect(40, 200, 21, 21))
         self.label_4.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_4.setStyleSheet("QLabel{\n"
 "    border: 0px;\n"
@@ -281,7 +281,7 @@ class Ui_Form(object):
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.combo_anio = QtWidgets.QComboBox(self.frame)
-        self.combo_anio.setGeometry(QtCore.QRect(50, 220, 321, 31))
+        self.combo_anio.setGeometry(QtCore.QRect(50, 230, 321, 31))
         self.combo_anio.setStyleSheet("QComboBox {\n"
 "    background-color: #1E1E1E;\n"
 "    color: white;\n"
@@ -324,7 +324,7 @@ class Ui_Form(object):
         self.combo_anio.addItem("")
         self.combo_anio.addItem("")
         self.label_5 = QtWidgets.QLabel(self.frame)
-        self.label_5.setGeometry(QtCore.QRect(40, 260, 20, 20))
+        self.label_5.setGeometry(QtCore.QRect(40, 280, 20, 20))
         self.label_5.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_5.setStyleSheet("QLabel{\n"
 "    border: 0px;\n"
@@ -334,7 +334,7 @@ class Ui_Form(object):
         self.label_5.setScaledContents(True)
         self.label_5.setObjectName("label_5")
         self.label_6 = QtWidgets.QLabel(self.frame)
-        self.label_6.setGeometry(QtCore.QRect(40, 330, 21, 21))
+        self.label_6.setGeometry(QtCore.QRect(40, 360, 21, 21))
         self.label_6.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_6.setStyleSheet("QLabel{\n"
 "    border: 0px;\n"
@@ -344,7 +344,7 @@ class Ui_Form(object):
         self.label_6.setScaledContents(True)
         self.label_6.setObjectName("label_6")
         self.label_13 = QtWidgets.QLabel(self.frame)
-        self.label_13.setGeometry(QtCore.QRect(40, 400, 21, 21))
+        self.label_13.setGeometry(QtCore.QRect(40, 440, 21, 21))
         self.label_13.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_13.setStyleSheet("QLabel{\n"
 "    border: 0px;\n"
@@ -353,6 +353,165 @@ class Ui_Form(object):
         self.label_13.setPixmap(QtGui.QPixmap("ui\\../iconos/licencia-de-conducir.png"))
         self.label_13.setScaledContents(True)
         self.label_13.setObjectName("label_13")
+        self.label_14 = QtWidgets.QLabel(self.frame)
+        self.label_14.setGeometry(QtCore.QRect(460, 120, 171, 21))
+        self.label_14.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_14.setObjectName("label_14")
+        self.label_15 = QtWidgets.QLabel(self.frame)
+        self.label_15.setGeometry(QtCore.QRect(460, 200, 171, 21))
+        self.label_15.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_15.setObjectName("label_15")
+        self.combo_localidad = QtWidgets.QComboBox(self.frame)
+        self.combo_localidad.setGeometry(QtCore.QRect(450, 150, 321, 31))
+        self.combo_localidad.setStyleSheet("QComboBox {\n"
+"    background-color: #1E1E1E;\n"
+"    color: white;\n"
+"    border: 2px solid #42A5F5;\n"
+"    border-radius: 12px;\n"
+"    padding: 6px 12px;\n"
+"    font-size: 14px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QComboBox:hover {\n"
+"    border: 2px solid #64B5F6;\n"
+"    background-color: #252525;\n"
+"}\n"
+"\n"
+"QComboBox:focus {\n"
+"    border: 2px solid #90CAF9;\n"
+"}\n"
+"\n"
+"QComboBox::drop-down {\n"
+"    border: none;\n"
+"    width: 30px;\n"
+"}\n"
+"\n"
+"QComboBox::down-arrow {\n"
+"    image: none;\n"
+"}\n"
+"\n"
+"QComboBox QAbstractItemView {\n"
+"    background-color: #2A2A2A;\n"
+"    color: white;\n"
+"    border: 2px solid #42A5F5;\n"
+"    border-radius: 8px;\n"
+"    selection-background-color: #42A5F5;\n"
+"    selection-color: white;\n"
+"}")
+        self.combo_localidad.setObjectName("combo_localidad")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.combo_localidad.addItem("")
+        self.date = QtWidgets.QDateEdit(self.frame)
+        self.date.setGeometry(QtCore.QRect(450, 230, 321, 31))
+        self.date.setStyleSheet("QDateEdit {\n"
+"    background-color: #2b2b2b;\n"
+"    color: white;\n"
+"    border: 2px solid #00B4D8;\n"
+"    border-radius: 4px;\n"
+"    padding: 4px;\n"
+"}\n"
+"\n"
+"QDateEdit::drop-down {\n"
+"    subcontrol-origin: padding;\n"
+"    subcontrol-position: top right;\n"
+"    width: 20px;\n"
+"    border-left: 1px solid #00B4D8;\n"
+"    background-color: #383838;\n"
+"}")
+        self.date.setObjectName("date")
+        self.label_16 = QtWidgets.QLabel(self.frame)
+        self.label_16.setGeometry(QtCore.QRect(430, 200, 21, 21))
+        self.label_16.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_16.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_16.setText("")
+        self.label_16.setPixmap(QtGui.QPixmap("ui\\../iconos/calendario (1).png"))
+        self.label_16.setScaledContents(True)
+        self.label_16.setObjectName("label_16")
+        self.label_17 = QtWidgets.QLabel(self.frame)
+        self.label_17.setGeometry(QtCore.QRect(430, 120, 21, 21))
+        self.label_17.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_17.setText("")
+        self.label_17.setPixmap(QtGui.QPixmap("ui\\../iconos/marcador-de-posicion.png"))
+        self.label_17.setScaledContents(True)
+        self.label_17.setObjectName("label_17")
+        self.label_18 = QtWidgets.QLabel(self.frame)
+        self.label_18.setGeometry(QtCore.QRect(460, 280, 181, 21))
+        self.label_18.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_18.setObjectName("label_18")
+        self.label_19 = QtWidgets.QLabel(self.frame)
+        self.label_19.setGeometry(QtCore.QRect(470, 360, 181, 21))
+        self.label_19.setStyleSheet("QLabel{\n"
+"    color: #F8FAFC;\n"
+"    font-family: \"Segoe UI\";\n"
+"    font-size: 12pt;\n"
+"    font-weight: 600;\n"
+"    letter-spacing: 0.5px;\n"
+"    background: transparent;\n"
+"    border: none;\n"
+"}")
+        self.label_19.setObjectName("label_19")
+        self.gmail = QtWidgets.QLineEdit(self.frame)
+        self.gmail.setGeometry(QtCore.QRect(450, 310, 321, 31))
+        self.gmail.setObjectName("gmail")
+        self.phone_number = QtWidgets.QLineEdit(self.frame)
+        self.phone_number.setGeometry(QtCore.QRect(450, 390, 321, 31))
+        self.phone_number.setObjectName("phone_number")
+        self.label_20 = QtWidgets.QLabel(self.frame)
+        self.label_20.setGeometry(QtCore.QRect(430, 360, 31, 21))
+        self.label_20.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_20.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_20.setText("")
+        self.label_20.setPixmap(QtGui.QPixmap("ui\\../iconos/contactos-telefonicos.png"))
+        self.label_20.setScaledContents(True)
+        self.label_20.setObjectName("label_20")
+        self.label_21 = QtWidgets.QLabel(self.frame)
+        self.label_21.setGeometry(QtCore.QRect(430, 280, 31, 31))
+        self.label_21.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_21.setStyleSheet("QLabel{\n"
+"    border: 0px;\n"
+"}")
+        self.label_21.setText("")
+        self.label_21.setPixmap(QtGui.QPixmap("ui\\../iconos/email.png"))
+        self.label_21.setScaledContents(True)
+        self.label_21.setObjectName("label_21")
         self.bt_guardar.raise_()
         self.label_7.raise_()
         self.input_apellido.raise_()
@@ -372,14 +531,26 @@ class Ui_Form(object):
         self.label_13.raise_()
         self.combo_anio.raise_()
         self.input_nombre.raise_()
+        self.label_14.raise_()
+        self.label_15.raise_()
+        self.combo_localidad.raise_()
+        self.date.raise_()
+        self.label_16.raise_()
+        self.label_17.raise_()
+        self.label_18.raise_()
+        self.label_19.raise_()
+        self.gmail.raise_()
+        self.phone_number.raise_()
+        self.label_20.raise_()
+        self.label_21.raise_()
         self.label = QtWidgets.QLabel(Form)
-        self.label.setGeometry(QtCore.QRect(0, 0, 501, 721))
+        self.label.setGeometry(QtCore.QRect(0, 0, 421, 721))
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("ui\\../foto1 - copia.jpg"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
         self.bt_volver = QtWidgets.QPushButton(Form)
-        self.bt_volver.setGeometry(QtCore.QRect(560, 20, 91, 51))
+        self.bt_volver.setGeometry(QtCore.QRect(440, 10, 91, 51))
         self.bt_volver.setMinimumSize(QtCore.QSize(0, 0))
         self.bt_volver.setStyleSheet("QPushButton{\n"
 "    background-color: #1B2330;\n"
@@ -415,7 +586,7 @@ class Ui_Form(object):
         self.bt_guardar.setText(_translate("Form", "Guardar"))
         self.TextoLogin.setWhatsThis(_translate("Form", "<html><head/><body><p><span style=\" font-size:11pt; font-weight:600; color:#00007f;\">INGRESÁ A TU CUENTA</span></p></body></html>"))
         self.TextoLogin.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:28pt; font-weight:600; color:#ffffff;\">Registro de Alumno.</span></p></body></html>"))
-        self.label_7.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Carrera / Tecnicatura:</span></p></body></html>"))
+        self.label_7.setText(_translate("Form", "<html><head/><body><p align=\"justify\">Carrera / Tecnicatura:</p></body></html>"))
         self.combo_carrera.setItemText(0, _translate("Form", "TEC. SUP. EN DESARROLLO DE SOFTWARE."))
         self.combo_carrera.setItemText(1, _translate("Form", "TEC. EN FRUTIHORTICOLA."))
         self.combo_carrera.setItemText(2, _translate("Form", "TEC. EN MARKETING Y PUBLICIDAD."))
@@ -423,12 +594,25 @@ class Ui_Form(object):
         self.combo_carrera.setItemText(4, _translate("Form", "PROFESORADO EN TECNOLOGÍA."))
         self.combo_carrera.setItemText(5, _translate("Form", "PROFESORADO EN FISÍCA."))
         self.label_8.setText(_translate("Form", "Complete los datos."))
-        self.label_9.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Año de Carrera / Tecnicatura:</span></p></body></html>"))
-        self.label_10.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Nombre:</span></p></body></html>"))
-        self.label_11.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">Apellido:</span></p></body></html>"))
-        self.label_12.setText(_translate("Form", "<html><head/><body><p><span style=\" font-size:10pt;\">D.N.I:</span></p></body></html>"))
+        self.label_9.setText(_translate("Form", "<html><head/><body><p>Año de Carrera / Tecnicatura:</p></body></html>"))
+        self.label_10.setText(_translate("Form", "<html><head/><body><p>Nombre:</p></body></html>"))
+        self.label_11.setText(_translate("Form", "<html><head/><body><p>Apellido:</p></body></html>"))
+        self.label_12.setText(_translate("Form", "<html><head/><body><p>D.N.I:</p></body></html>"))
         self.combo_anio.setItemText(0, _translate("Form", "1° Año."))
         self.combo_anio.setItemText(1, _translate("Form", "2° Año."))
         self.combo_anio.setItemText(2, _translate("Form", "3° Año."))
         self.combo_anio.setItemText(3, _translate("Form", "4° Año."))
+        self.label_14.setText(_translate("Form", "<html><head/><body><p>Localidad:</p><p><br/></p></body></html>"))
+        self.label_15.setText(_translate("Form", "<html><head/><body><p>Fecha de Nacimiento:</p></body></html>"))
+        self.combo_localidad.setItemText(0, _translate("Form", "Colonias Unidas."))
+        self.combo_localidad.setItemText(1, _translate("Form", "Colonia Elisa."))
+        self.combo_localidad.setItemText(2, _translate("Form", "Capitan Solari."))
+        self.combo_localidad.setItemText(3, _translate("Form", "La Escondida."))
+        self.combo_localidad.setItemText(4, _translate("Form", "General San Martin."))
+        self.combo_localidad.setItemText(5, _translate("Form", "Las Garcitas."))
+        self.combo_localidad.setItemText(6, _translate("Form", "Ciervo Petiso."))
+        self.combo_localidad.setItemText(7, _translate("Form", "Laguna Limpia."))
+        self.combo_localidad.setItemText(8, _translate("Form", "Otro."))
+        self.label_18.setText(_translate("Form", "<html><head/><body><p>Correo Electronico:</p></body></html>"))
+        self.label_19.setText(_translate("Form", "<html><head/><body><p>N° Teléfono:</p></body></html>"))
         self.bt_volver.setText(_translate("Form", "⮜ Volver"))
