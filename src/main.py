@@ -1,6 +1,12 @@
 ﻿#Importa los paquetes y modulos necesarios
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QMessageBox, QMainWindow
+from PyQt5.QtWidgets import (
+    QApplication, 
+    QWidget, 
+    QMessageBox, 
+    QMainWindow,
+    QTableWidgetItem
+)
 
 #Importa las ventanas
 from src.login_ui import Ui_Form
@@ -9,6 +15,7 @@ from src.interfaz_inicio_ui import Ui_MainWindow
 
 #Impota la conexion a la base de datos
 from database.conexion import conectar
+from database.alumnos import obtener_alumnos
  
 # Ventana INICIO (interfaz principal despues del login)
 class Inicio(QMainWindow, Ui_MainWindow):
@@ -19,6 +26,25 @@ class Inicio(QMainWindow, Ui_MainWindow):
 
         # Este boton define la funcion de volver a la ventana de login
         self.bt_volver2.clicked.connect(self.volver_login)
+        
+        self.cargar_alumnos()
+    def cargar_alumnos(self):
+        alumnos = obtener_alumnos()
+        
+    def cargar_alumnos(self):
+        alumnos = obtener_alumnos()
+        
+        self.tabla_alumnos.setRowCount(0)
+        
+        for fila, alumno in enumerate(alumnos):
+            self.tabla_alumnos.insertRow(fila)
+            
+            for columna, dato in enumerate(alumno):
+                self.tabla_alumnos.setItem(
+                    fila,
+                    columna,
+                    QTableWidgetItem(str(dato))
+                )
         
     def volver_login(self):
         self.login = Login()
