@@ -425,9 +425,9 @@ class Ui_Form(object):
         self.combo_localidad.addItem("")
         self.combo_localidad.addItem("")
         self.combo_localidad.addItem("")
-        self.date = QtWidgets.QDateEdit(self.frame)
-        self.date.setGeometry(QtCore.QRect(450, 230, 321, 31))
-        self.date.setStyleSheet("QDateEdit {\n"
+        self.date_nacimieto = QtWidgets.QDateEdit(self.frame)
+        self.date_nacimieto.setGeometry(QtCore.QRect(450, 230, 321, 31))
+        self.date_nacimieto.setStyleSheet("QDateEdit {\n"
 "    background-color: #2b2b2b;\n"
 "    color: white;\n"
 "    border: 2px solid #00B4D8;\n"
@@ -442,7 +442,7 @@ class Ui_Form(object):
 "    border-left: 1px solid #00B4D8;\n"
 "    background-color: #383838;\n"
 "}")
-        self.date.setObjectName("date")
+        self.date_nacimieto.setObjectName("date_nacimieto")
         self.label_16 = QtWidgets.QLabel(self.frame)
         self.label_16.setGeometry(QtCore.QRect(430, 200, 21, 21))
         self.label_16.setLayoutDirection(QtCore.Qt.LeftToRight)
@@ -486,12 +486,12 @@ class Ui_Form(object):
 "    border: none;\n"
 "}")
         self.label_19.setObjectName("label_19")
-        self.gmail = QtWidgets.QLineEdit(self.frame)
-        self.gmail.setGeometry(QtCore.QRect(450, 310, 321, 31))
-        self.gmail.setObjectName("gmail")
-        self.phone_number = QtWidgets.QLineEdit(self.frame)
-        self.phone_number.setGeometry(QtCore.QRect(450, 390, 321, 31))
-        self.phone_number.setObjectName("phone_number")
+        self.input_correo = QtWidgets.QLineEdit(self.frame)
+        self.input_correo.setGeometry(QtCore.QRect(450, 310, 321, 31))
+        self.input_correo.setObjectName("input_correo")
+        self.input_telefono = QtWidgets.QLineEdit(self.frame)
+        self.input_telefono.setGeometry(QtCore.QRect(450, 390, 321, 31))
+        self.input_telefono.setObjectName("input_telefono")
         self.label_20 = QtWidgets.QLabel(self.frame)
         self.label_20.setGeometry(QtCore.QRect(430, 360, 31, 21))
         self.label_20.setLayoutDirection(QtCore.Qt.LeftToRight)
@@ -534,13 +534,13 @@ class Ui_Form(object):
         self.label_14.raise_()
         self.label_15.raise_()
         self.combo_localidad.raise_()
-        self.date.raise_()
+        self.date_nacimieto.raise_()
         self.label_16.raise_()
         self.label_17.raise_()
         self.label_18.raise_()
         self.label_19.raise_()
-        self.gmail.raise_()
-        self.phone_number.raise_()
+        self.input_correo.raise_()
+        self.input_telefono.raise_()
         self.label_20.raise_()
         self.label_21.raise_()
         self.label = QtWidgets.QLabel(Form)

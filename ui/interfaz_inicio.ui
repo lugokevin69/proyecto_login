@@ -1361,7 +1361,7 @@ QLineEdit:focus{
       <string>🔍 Buscar alumno...</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_16">
+    <widget class="QPushButton" name="bt_agregar">
      <property name="geometry">
       <rect>
        <x>550</x>

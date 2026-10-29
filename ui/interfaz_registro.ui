@@ -793,7 +793,7 @@ QComboBox QAbstractItemView {
      </property>
     </item>
    </widget>
-   <widget class="QDateEdit" name="date">
+   <widget class="QDateEdit" name="date_nacimieto">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -919,7 +919,7 @@ QDateEdit::drop-down {
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;N° Teléfono:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="gmail">
+   <widget class="QLineEdit" name="input_correo">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -929,7 +929,7 @@ QDateEdit::drop-down {
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="phone_number">
+   <widget class="QLineEdit" name="input_telefono">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -1015,13 +1015,13 @@ QDateEdit::drop-down {
    <zorder>label_14</zorder>
    <zorder>label_15</zorder>
    <zorder>combo_localidad</zorder>
-   <zorder>date</zorder>
+   <zorder>date_nacimieto</zorder>
    <zorder>label_16</zorder>
    <zorder>label_17</zorder>
    <zorder>label_18</zorder>
    <zorder>label_19</zorder>
-   <zorder>gmail</zorder>
-   <zorder>phone_number</zorder>
+   <zorder>input_correo</zorder>
+   <zorder>input_telefono</zorder>
    <zorder>label_20</zorder>
    <zorder>label_21</zorder>
   </widget>

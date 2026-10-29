@@ -877,9 +877,9 @@ class Ui_MainWindow(object):
 "    border: 2px solid #2563EB;\n"
 "}")
         self.lineEdit.setObjectName("lineEdit")
-        self.pushButton_16 = QtWidgets.QPushButton(self.frame_2)
-        self.pushButton_16.setGeometry(QtCore.QRect(550, 80, 141, 31))
-        self.pushButton_16.setStyleSheet("QPushButton{\n"
+        self.bt_agregar = QtWidgets.QPushButton(self.frame_2)
+        self.bt_agregar.setGeometry(QtCore.QRect(550, 80, 141, 31))
+        self.bt_agregar.setStyleSheet("QPushButton{\n"
 "    font: 87 8pt \"Arial Black\";\n"
 "    background-color: #2E86FF;\n"
 "    color: white;\n"
@@ -888,8 +888,8 @@ class Ui_MainWindow(object):
 "}")
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap("ui\\../../../../../.designer/iconos/icons8-signo-más-64.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_16.setIcon(icon1)
-        self.pushButton_16.setObjectName("pushButton_16")
+        self.bt_agregar.setIcon(icon1)
+        self.bt_agregar.setObjectName("bt_agregar")
         self.label_34 = QtWidgets.QLabel(self.frame_2)
         self.label_34.setGeometry(QtCore.QRect(10, 90, 41, 31))
         self.label_34.setStyleSheet("QLabel {\n"
@@ -1047,7 +1047,7 @@ class Ui_MainWindow(object):
         self.tabla_alumnos.setSortingEnabled(__sortingEnabled)
         self.label_6.setText(_translate("MainWindow", "Alumnos - 3° AÑO."))
         self.lineEdit.setPlaceholderText(_translate("MainWindow", "🔍 Buscar alumno..."))
-        self.pushButton_16.setText(_translate("MainWindow", "Agregar Alumno"))
+        self.bt_agregar.setText(_translate("MainWindow", "Agregar Alumno"))
         self.toolButton.setText(_translate("MainWindow", "⋮"))
         self.toolButton_2.setText(_translate("MainWindow", "⋮"))
         self.toolButton_3.setText(_translate("MainWindow", "⋮"))
