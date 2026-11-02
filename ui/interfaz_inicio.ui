@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1359</width>
+    <width>1306</width>
     <height>703</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -39,7 +45,7 @@
      <string notr="true">background-color: #0F2347;
 </string>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="bt_software">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -155,7 +161,7 @@ QPushButton{
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="bt_frutihorticola">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -252,7 +258,7 @@ QPushButton{
        <normaloff>../iconos/alumno.png</normaloff>../iconos/alumno.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="bt_marketing">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -349,7 +355,7 @@ QPushButton{
        <normaloff>../iconos/alumno.png</normaloff>../iconos/alumno.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="bt_prof_tic">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -446,7 +452,7 @@ QPushButton{
        <normaloff>../iconos/alumno.png</normaloff>../iconos/alumno.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="bt_prof_tecnologia">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -543,7 +549,7 @@ QPushButton{
        <normaloff>../iconos/alumno.png</normaloff>../iconos/alumno.png</iconset>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="bt_prof_fisica">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -750,7 +756,7 @@ QPushButton:hover{
      <rect>
       <x>300</x>
       <y>120</y>
-      <width>731</width>
+      <width>961</width>
       <height>531</height>
      </rect>
     </property>
@@ -772,7 +778,7 @@ QPushButton:hover{
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>711</width>
+       <width>911</width>
        <height>61</height>
       </rect>
      </property>
@@ -789,12 +795,12 @@ QPushButton:hover{
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="iblnombrecarrera">
       <property name="geometry">
        <rect>
         <x>50</x>
         <y>20</y>
-        <width>441</width>
+        <width>341</width>
         <height>21</height>
        </rect>
       </property>
@@ -815,34 +821,7 @@ QLabel{
        <string>Tecnicatura Superior en Desarrollo de Software.</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_13">
-      <property name="geometry">
-       <rect>
-        <x>460</x>
-        <y>10</y>
-        <width>81</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{
-    background-color: #3A4358;
-    color: white;
-    border: 1px solid #4A5568;
-    border-radius: 4px;
-    padding: 8px;
-    font-weight: bold;
-}
-
-QPushButton:hover{
-    background-color: #4A5568;
-}</string>
-      </property>
-      <property name="text">
-       <string>1° Año.</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_14">
+     <widget class="QPushButton" name="bt_anio1">
       <property name="geometry">
        <rect>
         <x>540</x>
@@ -866,13 +845,13 @@ QPushButton:hover{
 }</string>
       </property>
       <property name="text">
-       <string>2° Año.</string>
+       <string>1° Año.</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_15">
+     <widget class="QPushButton" name="bt_anio2">
       <property name="geometry">
        <rect>
-        <x>620</x>
+        <x>630</x>
         <y>10</y>
         <width>81</width>
         <height>31</height>
@@ -880,16 +859,20 @@ QPushButton:hover{
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	font: 87 8pt &quot;Arial Black&quot;;
-
-    background-color: #2E86FF;
+    background-color: #3A4358;
     color: white;
-    border: none;
+    border: 1px solid #4A5568;
     border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover{
+    background-color: #4A5568;
 }</string>
       </property>
       <property name="text">
-       <string>3° Año.</string>
+       <string>2° Año.</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_8">
@@ -916,13 +899,67 @@ QPushButton:hover{
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QPushButton" name="bt_anio3">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3A4358;
+    color: white;
+    border: 1px solid #4A5568;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover{
+    background-color: #4A5568;
+}</string>
+      </property>
+      <property name="text">
+       <string>3° Año.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bt_anio4">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>10</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+    background-color: #3A4358;
+    color: white;
+    border: 1px solid #4A5568;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover{
+    background-color: #4A5568;
+}</string>
+      </property>
+      <property name="text">
+       <string>4° Año.</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QTableWidget" name="tabla_alumnos">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>30</x>
        <y>130</y>
-       <width>621</width>
+       <width>741</width>
        <height>351</height>
       </rect>
      </property>
@@ -1008,60 +1045,57 @@ QTableWidget::item {
      </attribute>
      <row>
       <property name="text">
-       <string>1</string>
+       <string>    1</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>2</string>
+       <string>    2</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>3</string>
+       <string>    3</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>4</string>
+       <string>    4</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>5</string>
+       <string>    5</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>6</string>
+       <string>    6</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>7</string>
+       <string>    7</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>8</string>
+       <string>    8</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>9</string>
+       <string>    9</string>
       </property>
      </row>
      <row>
       <property name="text">
-       <string>10</string>
+       <string>  10</string>
       </property>
      </row>
      <column>
       <property name="text">
        <string>NOMBRE</string>
-      </property>
-      <property name="textAlignment">
-       <set>AlignCenter</set>
       </property>
      </column>
      <column>
@@ -1082,6 +1116,16 @@ QTableWidget::item {
      <column>
       <property name="text">
        <string>CORREO </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>LOCALIDAD</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>F. NAC</string>
       </property>
      </column>
      <item row="0" column="0">
@@ -1287,9 +1331,9 @@ QTableWidget::item {
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>60</x>
+       <x>80</x>
        <y>90</y>
-       <width>441</width>
+       <width>101</width>
        <height>31</height>
       </rect>
      </property>
@@ -1307,7 +1351,7 @@ QLabel{
 }</string>
      </property>
      <property name="text">
-      <string>Alumnos - 3° AÑO.</string>
+      <string>Alumnos.</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -1332,13 +1376,13 @@ QLabel{
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="input_buscar">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>530</x>
        <y>80</y>
-       <width>221</width>
-       <height>37</height>
+       <width>231</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1364,23 +1408,30 @@ QLineEdit:focus{
     <widget class="QPushButton" name="bt_agregar">
      <property name="geometry">
       <rect>
-       <x>550</x>
+       <x>770</x>
        <y>80</y>
        <width>141</width>
-       <height>31</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton{
-	font: 87 8pt &quot;Arial Black&quot;;
+	 font-family: &quot;Segoe UI&quot;;
     background-color: #2E86FF;
     color: white;
     border: none;
     border-radius: 4px;
+}
+QPushButton:hover {
+    background-color: #1A73E8; /* Un azul un poco más oscuro */
+}
+
+QPushButton:pressed {
+    background-color: #1557B0; /* Un azul más intenso al hacer clic */
 }</string>
      </property>
      <property name="text">
-      <string>Agregar Alumno</string>
+      <string>+ Agregar Alumno</string>
      </property>
      <property name="icon">
       <iconset>
@@ -1390,7 +1441,7 @@ QLineEdit:focus{
     <widget class="QLabel" name="label_34">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>30</x>
        <y>90</y>
        <width>41</width>
        <height>31</height>
@@ -1414,7 +1465,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>170</y>
        <width>34</width>
        <height>37</height>
@@ -1436,7 +1487,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_2">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>200</y>
        <width>34</width>
        <height>37</height>
@@ -1458,7 +1509,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_3">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>230</y>
        <width>34</width>
        <height>37</height>
@@ -1480,7 +1531,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_4">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>260</y>
        <width>34</width>
        <height>37</height>
@@ -1502,7 +1553,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_5">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>290</y>
        <width>34</width>
        <height>37</height>
@@ -1524,7 +1575,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_6">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>320</y>
        <width>34</width>
        <height>37</height>
@@ -1546,7 +1597,7 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_7">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>350</y>
        <width>34</width>
        <height>37</height>
@@ -1568,8 +1619,52 @@ QLineEdit:focus{
     <widget class="QToolButton" name="toolButton_8">
      <property name="geometry">
       <rect>
-       <x>640</x>
+       <x>780</x>
        <y>380</y>
+       <width>34</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {
+         background-color: transparent;
+         border: none;
+         color: white;
+         font-size: 28px;
+         font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>⋮</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_9">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>410</y>
+       <width>34</width>
+       <height>37</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton {
+         background-color: transparent;
+         border: none;
+         color: white;
+         font-size: 28px;
+         font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>⋮</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_10">
+     <property name="geometry">
+      <rect>
+       <x>780</x>
+       <y>440</y>
        <width>34</width>
        <height>37</height>
       </rect>

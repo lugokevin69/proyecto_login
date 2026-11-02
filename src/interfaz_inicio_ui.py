@@ -14,7 +14,11 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1359, 703)
+        MainWindow.resize(1306, 703)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        MainWindow.setFont(font)
         MainWindow.setStyleSheet(" background-color: #1A1D24;")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -25,9 +29,9 @@ class Ui_MainWindow(object):
         self.widget.setStyleSheet("background-color: #0F2347;\n"
 "")
         self.widget.setObjectName("widget")
-        self.pushButton = QtWidgets.QPushButton(self.widget)
-        self.pushButton.setGeometry(QtCore.QRect(0, 220, 261, 45))
-        self.pushButton.setStyleSheet("QWidget{\n"
+        self.bt_software = QtWidgets.QPushButton(self.widget)
+        self.bt_software.setGeometry(QtCore.QRect(0, 220, 261, 45))
+        self.bt_software.setStyleSheet("QWidget{\n"
 "    background-color: #1A1D24;\n"
 "    color: white;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -106,18 +110,18 @@ class Ui_MainWindow(object):
 "    font-weight: 600;\n"
 "}")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("ui\\../iconos/alumno.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton.setIcon(icon)
-        self.pushButton.setObjectName("pushButton")
+        icon.addPixmap(QtGui.QPixmap("ui/../iconos/alumno.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.bt_software.setIcon(icon)
+        self.bt_software.setObjectName("bt_software")
         self.label = QtWidgets.QLabel(self.widget)
         self.label.setGeometry(QtCore.QRect(30, 20, 191, 171))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("ui\\../Logo del instituto png.png"))
+        self.label.setPixmap(QtGui.QPixmap("ui/../Logo del instituto png.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
-        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
-        self.pushButton_2.setGeometry(QtCore.QRect(0, 260, 251, 45))
-        self.pushButton_2.setStyleSheet("QWidget{\n"
+        self.bt_frutihorticola = QtWidgets.QPushButton(self.widget)
+        self.bt_frutihorticola.setGeometry(QtCore.QRect(0, 260, 251, 45))
+        self.bt_frutihorticola.setStyleSheet("QWidget{\n"
 "    background-color: #1A1D24;\n"
 "    color: white;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -195,11 +199,11 @@ class Ui_MainWindow(object):
 "    font-size: 9pt;\n"
 "    font-weight: 600;\n"
 "}")
-        self.pushButton_2.setIcon(icon)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.pushButton_3 = QtWidgets.QPushButton(self.widget)
-        self.pushButton_3.setGeometry(QtCore.QRect(0, 300, 251, 45))
-        self.pushButton_3.setStyleSheet("QWidget{\n"
+        self.bt_frutihorticola.setIcon(icon)
+        self.bt_frutihorticola.setObjectName("bt_frutihorticola")
+        self.bt_marketing = QtWidgets.QPushButton(self.widget)
+        self.bt_marketing.setGeometry(QtCore.QRect(0, 300, 251, 45))
+        self.bt_marketing.setStyleSheet("QWidget{\n"
 "    background-color: #1A1D24;\n"
 "    color: white;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -277,11 +281,11 @@ class Ui_MainWindow(object):
 "    font-size: 9pt;\n"
 "    font-weight: 600;\n"
 "}")
-        self.pushButton_3.setIcon(icon)
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.widget)
-        self.pushButton_4.setGeometry(QtCore.QRect(0, 340, 251, 45))
-        self.pushButton_4.setStyleSheet("QWidget{\n"
+        self.bt_marketing.setIcon(icon)
+        self.bt_marketing.setObjectName("bt_marketing")
+        self.bt_prof_tic = QtWidgets.QPushButton(self.widget)
+        self.bt_prof_tic.setGeometry(QtCore.QRect(0, 340, 251, 45))
+        self.bt_prof_tic.setStyleSheet("QWidget{\n"
 "    background-color: #1A1D24;\n"
 "    color: white;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -359,11 +363,11 @@ class Ui_MainWindow(object):
 "    font-size: 9pt;\n"
 "    font-weight: 600;\n"
 "}")
-        self.pushButton_4.setIcon(icon)
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_5 = QtWidgets.QPushButton(self.widget)
-        self.pushButton_5.setGeometry(QtCore.QRect(0, 380, 251, 45))
-        self.pushButton_5.setStyleSheet("QWidget{\n"
+        self.bt_prof_tic.setIcon(icon)
+        self.bt_prof_tic.setObjectName("bt_prof_tic")
+        self.bt_prof_tecnologia = QtWidgets.QPushButton(self.widget)
+        self.bt_prof_tecnologia.setGeometry(QtCore.QRect(0, 380, 251, 45))
+        self.bt_prof_tecnologia.setStyleSheet("QWidget{\n"
 "    background-color: #1A1D24;\n"
 "    color: white;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -441,11 +445,11 @@ class Ui_MainWindow(object):
 "    font-size: 9pt;\n"
 "    font-weight: 600;\n"
 "}")
-        self.pushButton_5.setIcon(icon)
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_6 = QtWidgets.QPushButton(self.widget)
-        self.pushButton_6.setGeometry(QtCore.QRect(0, 420, 251, 45))
-        self.pushButton_6.setStyleSheet("QWidget{\n"
+        self.bt_prof_tecnologia.setIcon(icon)
+        self.bt_prof_tecnologia.setObjectName("bt_prof_tecnologia")
+        self.bt_prof_fisica = QtWidgets.QPushButton(self.widget)
+        self.bt_prof_fisica.setGeometry(QtCore.QRect(0, 420, 251, 45))
+        self.bt_prof_fisica.setStyleSheet("QWidget{\n"
 "    background-color: #1A1D24;\n"
 "    color: white;\n"
 "    font-family: \"Segoe UI\";\n"
@@ -523,8 +527,8 @@ class Ui_MainWindow(object):
 "    font-size: 9pt;\n"
 "    font-weight: 600;\n"
 "}")
-        self.pushButton_6.setIcon(icon)
-        self.pushButton_6.setObjectName("pushButton_6")
+        self.bt_prof_fisica.setIcon(icon)
+        self.bt_prof_fisica.setObjectName("bt_prof_fisica")
         self.bt_volver2 = QtWidgets.QPushButton(self.widget)
         self.bt_volver2.setGeometry(QtCore.QRect(60, 600, 101, 31))
         self.bt_volver2.setStyleSheet("QPushButton{\n"
@@ -583,7 +587,7 @@ class Ui_MainWindow(object):
         self.pushButton_7.setText("")
         self.pushButton_7.setObjectName("pushButton_7")
         self.frame_2 = QtWidgets.QFrame(self.centralwidget)
-        self.frame_2.setGeometry(QtCore.QRect(300, 120, 731, 531))
+        self.frame_2.setGeometry(QtCore.QRect(300, 120, 961, 531))
         self.frame_2.setStyleSheet("QFrame{\n"
 "    background-color: #1E2433;\n"
 "    border: 2px solid #3A4358;\n"
@@ -593,7 +597,7 @@ class Ui_MainWindow(object):
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
         self.frame = QtWidgets.QFrame(self.frame_2)
-        self.frame.setGeometry(QtCore.QRect(10, 10, 711, 61))
+        self.frame.setGeometry(QtCore.QRect(10, 10, 911, 61))
         self.frame.setStyleSheet("QFrame{\n"
 "    background-color: #18243D;\n"
 "    border: 2px solid #2E5CB8;\n"
@@ -602,9 +606,9 @@ class Ui_MainWindow(object):
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
-        self.label_5 = QtWidgets.QLabel(self.frame)
-        self.label_5.setGeometry(QtCore.QRect(50, 20, 441, 21))
-        self.label_5.setStyleSheet("QLabel{\n"
+        self.iblnombrecarrera = QtWidgets.QLabel(self.frame)
+        self.iblnombrecarrera.setGeometry(QtCore.QRect(50, 20, 341, 21))
+        self.iblnombrecarrera.setStyleSheet("QLabel{\n"
 "    color: white;\n"
 "    background: transparent;\n"
 "    border: none;\n"
@@ -615,10 +619,10 @@ class Ui_MainWindow(object):
 "    font-weight: bold;\n"
 "    background: transparent;\n"
 "}")
-        self.label_5.setObjectName("label_5")
-        self.pushButton_13 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_13.setGeometry(QtCore.QRect(460, 10, 81, 31))
-        self.pushButton_13.setStyleSheet("QPushButton{\n"
+        self.iblnombrecarrera.setObjectName("iblnombrecarrera")
+        self.bt_anio1 = QtWidgets.QPushButton(self.frame)
+        self.bt_anio1.setGeometry(QtCore.QRect(540, 10, 81, 31))
+        self.bt_anio1.setStyleSheet("QPushButton{\n"
 "    background-color: #3A4358;\n"
 "    color: white;\n"
 "    border: 1px solid #4A5568;\n"
@@ -630,10 +634,10 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "    background-color: #4A5568;\n"
 "}")
-        self.pushButton_13.setObjectName("pushButton_13")
-        self.pushButton_14 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_14.setGeometry(QtCore.QRect(540, 10, 81, 31))
-        self.pushButton_14.setStyleSheet("QPushButton{\n"
+        self.bt_anio1.setObjectName("bt_anio1")
+        self.bt_anio2 = QtWidgets.QPushButton(self.frame)
+        self.bt_anio2.setGeometry(QtCore.QRect(630, 10, 81, 31))
+        self.bt_anio2.setStyleSheet("QPushButton{\n"
 "    background-color: #3A4358;\n"
 "    color: white;\n"
 "    border: 1px solid #4A5568;\n"
@@ -645,29 +649,48 @@ class Ui_MainWindow(object):
 "QPushButton:hover{\n"
 "    background-color: #4A5568;\n"
 "}")
-        self.pushButton_14.setObjectName("pushButton_14")
-        self.pushButton_15 = QtWidgets.QPushButton(self.frame)
-        self.pushButton_15.setGeometry(QtCore.QRect(620, 10, 81, 31))
-        self.pushButton_15.setStyleSheet("QPushButton{\n"
-"    font: 87 8pt \"Arial Black\";\n"
-"\n"
-"    background-color: #2E86FF;\n"
-"    color: white;\n"
-"    border: none;\n"
-"    border-radius: 4px;\n"
-"}")
-        self.pushButton_15.setObjectName("pushButton_15")
+        self.bt_anio2.setObjectName("bt_anio2")
         self.label_8 = QtWidgets.QLabel(self.frame)
         self.label_8.setGeometry(QtCore.QRect(10, 10, 31, 41))
         self.label_8.setStyleSheet("QLabel {\n"
 "        border: none;\n"
 "}")
         self.label_8.setText("")
-        self.label_8.setPixmap(QtGui.QPixmap("ui\\../iconos/icons8-computadora-de-escritorio-100.png"))
+        self.label_8.setPixmap(QtGui.QPixmap("ui/../iconos/icons8-computadora-de-escritorio-100.png"))
         self.label_8.setScaledContents(True)
         self.label_8.setObjectName("label_8")
+        self.bt_anio3 = QtWidgets.QPushButton(self.frame)
+        self.bt_anio3.setGeometry(QtCore.QRect(720, 10, 81, 31))
+        self.bt_anio3.setStyleSheet("QPushButton{\n"
+"    background-color: #3A4358;\n"
+"    color: white;\n"
+"    border: 1px solid #4A5568;\n"
+"    border-radius: 4px;\n"
+"    padding: 8px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #4A5568;\n"
+"}")
+        self.bt_anio3.setObjectName("bt_anio3")
+        self.bt_anio4 = QtWidgets.QPushButton(self.frame)
+        self.bt_anio4.setGeometry(QtCore.QRect(810, 10, 81, 31))
+        self.bt_anio4.setStyleSheet("QPushButton{\n"
+"    background-color: #3A4358;\n"
+"    color: white;\n"
+"    border: 1px solid #4A5568;\n"
+"    border-radius: 4px;\n"
+"    padding: 8px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: #4A5568;\n"
+"}")
+        self.bt_anio4.setObjectName("bt_anio4")
         self.tabla_alumnos = QtWidgets.QTableWidget(self.frame_2)
-        self.tabla_alumnos.setGeometry(QtCore.QRect(20, 130, 621, 351))
+        self.tabla_alumnos.setGeometry(QtCore.QRect(30, 130, 741, 351))
         self.tabla_alumnos.setStyleSheet("QTableWidget {\n"
 "    background-color: #1B1F26;\n"
 "    alternate-background-color: #222731;\n"
@@ -721,7 +744,7 @@ class Ui_MainWindow(object):
 "}")
         self.tabla_alumnos.setAlternatingRowColors(True)
         self.tabla_alumnos.setObjectName("tabla_alumnos")
-        self.tabla_alumnos.setColumnCount(5)
+        self.tabla_alumnos.setColumnCount(7)
         self.tabla_alumnos.setRowCount(10)
         item = QtWidgets.QTableWidgetItem()
         self.tabla_alumnos.setVerticalHeaderItem(0, item)
@@ -744,7 +767,6 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tabla_alumnos.setVerticalHeaderItem(9, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignCenter)
         self.tabla_alumnos.setHorizontalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
         self.tabla_alumnos.setHorizontalHeaderItem(1, item)
@@ -754,6 +776,10 @@ class Ui_MainWindow(object):
         self.tabla_alumnos.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         self.tabla_alumnos.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tabla_alumnos.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tabla_alumnos.setHorizontalHeaderItem(6, item)
         item = QtWidgets.QTableWidgetItem()
         item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEditable|QtCore.Qt.ItemIsDragEnabled|QtCore.Qt.ItemIsUserCheckable|QtCore.Qt.ItemIsEnabled)
         self.tabla_alumnos.setItem(0, 0, item)
@@ -840,7 +866,7 @@ class Ui_MainWindow(object):
         self.tabla_alumnos.verticalHeader().setSortIndicatorShown(True)
         self.tabla_alumnos.verticalHeader().setStretchLastSection(True)
         self.label_6 = QtWidgets.QLabel(self.frame_2)
-        self.label_6.setGeometry(QtCore.QRect(60, 90, 441, 31))
+        self.label_6.setGeometry(QtCore.QRect(80, 90, 101, 31))
         self.label_6.setStyleSheet("QLabel{\n"
 "    color: white;\n"
 "    background: transparent;\n"
@@ -857,12 +883,12 @@ class Ui_MainWindow(object):
         self.label_7.setGeometry(QtCore.QRect(20, 90, 31, 31))
         self.label_7.setStyleSheet("    border: none;")
         self.label_7.setText("")
-        self.label_7.setPixmap(QtGui.QPixmap("ui\\../../../../../.designer/iconos/icons8-grupos-de-usuarios-100.png"))
+        self.label_7.setPixmap(QtGui.QPixmap("ui/../../../../../.designer/iconos/icons8-grupos-de-usuarios-100.png"))
         self.label_7.setScaledContents(True)
         self.label_7.setObjectName("label_7")
-        self.lineEdit = QtWidgets.QLineEdit(self.frame_2)
-        self.lineEdit.setGeometry(QtCore.QRect(320, 80, 221, 37))
-        self.lineEdit.setStyleSheet("QLineEdit{\n"
+        self.input_buscar = QtWidgets.QLineEdit(self.frame_2)
+        self.input_buscar.setGeometry(QtCore.QRect(530, 80, 231, 41))
+        self.input_buscar.setStyleSheet("QLineEdit{\n"
 "    background-color: #222831;\n"
 "    color: white;\n"
 "    border: 1px solid #2A3140;\n"
@@ -876,31 +902,38 @@ class Ui_MainWindow(object):
 "QLineEdit:focus{\n"
 "    border: 2px solid #2563EB;\n"
 "}")
-        self.lineEdit.setObjectName("lineEdit")
+        self.input_buscar.setObjectName("input_buscar")
         self.bt_agregar = QtWidgets.QPushButton(self.frame_2)
-        self.bt_agregar.setGeometry(QtCore.QRect(550, 80, 141, 31))
+        self.bt_agregar.setGeometry(QtCore.QRect(770, 80, 141, 41))
         self.bt_agregar.setStyleSheet("QPushButton{\n"
-"    font: 87 8pt \"Arial Black\";\n"
+"     font-family: \"Segoe UI\";\n"
 "    background-color: #2E86FF;\n"
 "    color: white;\n"
 "    border: none;\n"
 "    border-radius: 4px;\n"
+"}\n"
+"QPushButton:hover {\n"
+"    background-color: #1A73E8; /* Un azul un poco más oscuro */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #1557B0; /* Un azul más intenso al hacer clic */\n"
 "}")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("ui\\../../../../../.designer/iconos/icons8-signo-más-64.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("ui/../../../../../.designer/iconos/icons8-signo-más-64.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.bt_agregar.setIcon(icon1)
         self.bt_agregar.setObjectName("bt_agregar")
         self.label_34 = QtWidgets.QLabel(self.frame_2)
-        self.label_34.setGeometry(QtCore.QRect(10, 90, 41, 31))
+        self.label_34.setGeometry(QtCore.QRect(30, 90, 41, 31))
         self.label_34.setStyleSheet("QLabel {\n"
 "       border: none;\n"
 "}")
         self.label_34.setText("")
-        self.label_34.setPixmap(QtGui.QPixmap("ui\\../iconos/icons8-grupos-de-usuarios-100.png"))
+        self.label_34.setPixmap(QtGui.QPixmap("ui/../iconos/icons8-grupos-de-usuarios-100.png"))
         self.label_34.setScaledContents(True)
         self.label_34.setObjectName("label_34")
         self.toolButton = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton.setGeometry(QtCore.QRect(640, 170, 34, 37))
+        self.toolButton.setGeometry(QtCore.QRect(780, 170, 34, 37))
         self.toolButton.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -910,7 +943,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton.setObjectName("toolButton")
         self.toolButton_2 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_2.setGeometry(QtCore.QRect(640, 200, 34, 37))
+        self.toolButton_2.setGeometry(QtCore.QRect(780, 200, 34, 37))
         self.toolButton_2.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -920,7 +953,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton_2.setObjectName("toolButton_2")
         self.toolButton_3 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_3.setGeometry(QtCore.QRect(640, 230, 34, 37))
+        self.toolButton_3.setGeometry(QtCore.QRect(780, 230, 34, 37))
         self.toolButton_3.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -930,7 +963,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton_3.setObjectName("toolButton_3")
         self.toolButton_4 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_4.setGeometry(QtCore.QRect(640, 260, 34, 37))
+        self.toolButton_4.setGeometry(QtCore.QRect(780, 260, 34, 37))
         self.toolButton_4.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -940,7 +973,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton_4.setObjectName("toolButton_4")
         self.toolButton_5 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_5.setGeometry(QtCore.QRect(640, 290, 34, 37))
+        self.toolButton_5.setGeometry(QtCore.QRect(780, 290, 34, 37))
         self.toolButton_5.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -950,7 +983,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton_5.setObjectName("toolButton_5")
         self.toolButton_6 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_6.setGeometry(QtCore.QRect(640, 320, 34, 37))
+        self.toolButton_6.setGeometry(QtCore.QRect(780, 320, 34, 37))
         self.toolButton_6.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -960,7 +993,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton_6.setObjectName("toolButton_6")
         self.toolButton_7 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_7.setGeometry(QtCore.QRect(640, 350, 34, 37))
+        self.toolButton_7.setGeometry(QtCore.QRect(780, 350, 34, 37))
         self.toolButton_7.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -970,7 +1003,7 @@ class Ui_MainWindow(object):
 "}")
         self.toolButton_7.setObjectName("toolButton_7")
         self.toolButton_8 = QtWidgets.QToolButton(self.frame_2)
-        self.toolButton_8.setGeometry(QtCore.QRect(640, 380, 34, 37))
+        self.toolButton_8.setGeometry(QtCore.QRect(780, 380, 34, 37))
         self.toolButton_8.setStyleSheet("QToolButton {\n"
 "         background-color: transparent;\n"
 "         border: none;\n"
@@ -979,10 +1012,30 @@ class Ui_MainWindow(object):
 "         font-weight: bold;\n"
 "}")
         self.toolButton_8.setObjectName("toolButton_8")
+        self.toolButton_9 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_9.setGeometry(QtCore.QRect(780, 410, 34, 37))
+        self.toolButton_9.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_9.setObjectName("toolButton_9")
+        self.toolButton_10 = QtWidgets.QToolButton(self.frame_2)
+        self.toolButton_10.setGeometry(QtCore.QRect(780, 440, 34, 37))
+        self.toolButton_10.setStyleSheet("QToolButton {\n"
+"         background-color: transparent;\n"
+"         border: none;\n"
+"         color: white;\n"
+"         font-size: 28px;\n"
+"         font-weight: bold;\n"
+"}")
+        self.toolButton_10.setObjectName("toolButton_10")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(270, 40, 51, 41))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("ui\\../iconos/gorro-de-graduacion.png"))
+        self.label_4.setPixmap(QtGui.QPixmap("ui/../iconos/gorro-de-graduacion.png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         self.frame_2.raise_()
@@ -999,39 +1052,40 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.pushButton.setText(_translate("MainWindow", " Tec. Sup. en Desarrollo de Software."))
-        self.pushButton_2.setText(_translate("MainWindow", "Tec. en Frutihorticola."))
-        self.pushButton_3.setText(_translate("MainWindow", "Tec. en Marketing y Publicidad."))
-        self.pushButton_4.setText(_translate("MainWindow", "Profesorado T.I.C"))
-        self.pushButton_5.setText(_translate("MainWindow", "Profesorado en Tecnología."))
-        self.pushButton_6.setText(_translate("MainWindow", "Profesorado en Fisíca."))
+        self.bt_software.setText(_translate("MainWindow", " Tec. Sup. en Desarrollo de Software."))
+        self.bt_frutihorticola.setText(_translate("MainWindow", "Tec. en Frutihorticola."))
+        self.bt_marketing.setText(_translate("MainWindow", "Tec. en Marketing y Publicidad."))
+        self.bt_prof_tic.setText(_translate("MainWindow", "Profesorado T.I.C"))
+        self.bt_prof_tecnologia.setText(_translate("MainWindow", "Profesorado en Tecnología."))
+        self.bt_prof_fisica.setText(_translate("MainWindow", "Profesorado en Fisíca."))
         self.bt_volver2.setText(_translate("MainWindow", "Volver"))
         self.label_2.setText(_translate("MainWindow", "Gestión de Alumnos"))
         self.label_3.setText(_translate("MainWindow", "Administración y seguimiento de estudiantes"))
-        self.label_5.setText(_translate("MainWindow", "Tecnicatura Superior en Desarrollo de Software."))
-        self.pushButton_13.setText(_translate("MainWindow", "1° Año."))
-        self.pushButton_14.setText(_translate("MainWindow", "2° Año."))
-        self.pushButton_15.setText(_translate("MainWindow", "3° Año."))
+        self.iblnombrecarrera.setText(_translate("MainWindow", "Tecnicatura Superior en Desarrollo de Software."))
+        self.bt_anio1.setText(_translate("MainWindow", "1° Año."))
+        self.bt_anio2.setText(_translate("MainWindow", "2° Año."))
+        self.bt_anio3.setText(_translate("MainWindow", "3° Año."))
+        self.bt_anio4.setText(_translate("MainWindow", "4° Año."))
         item = self.tabla_alumnos.verticalHeaderItem(0)
-        item.setText(_translate("MainWindow", "1"))
+        item.setText(_translate("MainWindow", "    1"))
         item = self.tabla_alumnos.verticalHeaderItem(1)
-        item.setText(_translate("MainWindow", "2"))
+        item.setText(_translate("MainWindow", "    2"))
         item = self.tabla_alumnos.verticalHeaderItem(2)
-        item.setText(_translate("MainWindow", "3"))
+        item.setText(_translate("MainWindow", "    3"))
         item = self.tabla_alumnos.verticalHeaderItem(3)
-        item.setText(_translate("MainWindow", "4"))
+        item.setText(_translate("MainWindow", "    4"))
         item = self.tabla_alumnos.verticalHeaderItem(4)
-        item.setText(_translate("MainWindow", "5"))
+        item.setText(_translate("MainWindow", "    5"))
         item = self.tabla_alumnos.verticalHeaderItem(5)
-        item.setText(_translate("MainWindow", "6"))
+        item.setText(_translate("MainWindow", "    6"))
         item = self.tabla_alumnos.verticalHeaderItem(6)
-        item.setText(_translate("MainWindow", "7"))
+        item.setText(_translate("MainWindow", "    7"))
         item = self.tabla_alumnos.verticalHeaderItem(7)
-        item.setText(_translate("MainWindow", "8"))
+        item.setText(_translate("MainWindow", "    8"))
         item = self.tabla_alumnos.verticalHeaderItem(8)
-        item.setText(_translate("MainWindow", "9"))
+        item.setText(_translate("MainWindow", "    9"))
         item = self.tabla_alumnos.verticalHeaderItem(9)
-        item.setText(_translate("MainWindow", "10"))
+        item.setText(_translate("MainWindow", "  10"))
         item = self.tabla_alumnos.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "NOMBRE"))
         item = self.tabla_alumnos.horizontalHeaderItem(1)
@@ -1042,12 +1096,16 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "TELEFONO"))
         item = self.tabla_alumnos.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "CORREO "))
+        item = self.tabla_alumnos.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "LOCALIDAD"))
+        item = self.tabla_alumnos.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "F. NAC"))
         __sortingEnabled = self.tabla_alumnos.isSortingEnabled()
         self.tabla_alumnos.setSortingEnabled(False)
         self.tabla_alumnos.setSortingEnabled(__sortingEnabled)
-        self.label_6.setText(_translate("MainWindow", "Alumnos - 3° AÑO."))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "🔍 Buscar alumno..."))
-        self.bt_agregar.setText(_translate("MainWindow", "Agregar Alumno"))
+        self.label_6.setText(_translate("MainWindow", "Alumnos."))
+        self.input_buscar.setPlaceholderText(_translate("MainWindow", "🔍 Buscar alumno..."))
+        self.bt_agregar.setText(_translate("MainWindow", "+ Agregar Alumno"))
         self.toolButton.setText(_translate("MainWindow", "⋮"))
         self.toolButton_2.setText(_translate("MainWindow", "⋮"))
         self.toolButton_3.setText(_translate("MainWindow", "⋮"))
@@ -1056,3 +1114,5 @@ class Ui_MainWindow(object):
         self.toolButton_6.setText(_translate("MainWindow", "⋮"))
         self.toolButton_7.setText(_translate("MainWindow", "⋮"))
         self.toolButton_8.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_9.setText(_translate("MainWindow", "⋮"))
+        self.toolButton_10.setText(_translate("MainWindow", "⋮"))
